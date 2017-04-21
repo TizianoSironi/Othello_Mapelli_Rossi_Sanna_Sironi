@@ -15,7 +15,7 @@ public class Othello_Mapelli_Rossi_Sanna_Sironi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("MioZia");
     }
     
 }
