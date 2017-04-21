@@ -16,6 +16,7 @@ public class Othello_Mapelli_Rossi_Sanna_Sironi {
      */
     public static void main(String[] args) {
         System.out.println("MioZio");
+        System.out.println("MioZia");
     }
     
 }
