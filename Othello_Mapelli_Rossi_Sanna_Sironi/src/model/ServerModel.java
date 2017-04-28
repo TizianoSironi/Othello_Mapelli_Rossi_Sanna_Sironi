@@ -1,9 +1,5 @@
 package model;
 
-/**
- *
- * @author Joker
- */
 public class ServerModel extends Thread{
     static int righe = 8;
     static int colonne = 8;
