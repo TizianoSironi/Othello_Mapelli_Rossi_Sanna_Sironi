@@ -5,18 +5,13 @@
  */
 package othello_mapelli_rossi_sanna_sironi;
 
-/**
- *
- * @author sironi.tiziano
- */
 public class Othello_Mapelli_Rossi_Sanna_Sironi {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("MioZio");
-        System.out.println("MioZia");
+        
     }
     
 }
