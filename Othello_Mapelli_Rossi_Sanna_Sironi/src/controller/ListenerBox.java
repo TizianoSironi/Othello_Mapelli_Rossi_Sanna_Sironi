@@ -8,10 +8,6 @@ package controller;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- *
- * @author Joker
- */
 public class ListenerBox implements ActionListener {
 
     @Override
