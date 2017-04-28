@@ -24,6 +24,8 @@ public class ServerModel extends Thread{
         */
         
         //caratteristiche giocatore (turno, colore, nome)
+        
+        
     }
     @Override
     public void run(){
