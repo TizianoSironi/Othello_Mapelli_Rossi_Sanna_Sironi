@@ -9,6 +9,11 @@ public class ServerModel extends Thread{
     static int nero = 1;
     static int scacchiera[][] = new int [righe][colonne]; 
     
+   public static void main (String arg[]){
+       int contatorePartite=0;
+      Partita p1 = new Partita(contatorePartite);
+   } 
+    
     @Override
     public void run(){
         
