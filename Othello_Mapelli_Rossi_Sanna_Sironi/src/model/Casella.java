@@ -23,11 +23,14 @@ public class Casella {
         Colore = col;
     }
     
-    public String cambiaColore (String col){
+    public void cambiaColore (String col){
         Colore = col;
-        return Colore;
+        libero=false;
     }
-    
+  
+    public boolean casellaVuota(){
+        return libero;
+    }
     @Override
     public String toString (){
         return Colore;

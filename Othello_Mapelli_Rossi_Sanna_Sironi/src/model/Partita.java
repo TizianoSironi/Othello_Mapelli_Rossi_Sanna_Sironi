@@ -18,6 +18,7 @@ public class Partita {
     int idPartita;
     String colGiocatore1;
     String colGiocatore2;
+    String turno;
     public Partita(int id){
       campo = new Scacchiera();  
       //Avviare la Socket
@@ -25,4 +26,10 @@ public class Partita {
       //giocatore1, giocatore2, ipGiocatore1, ipGiocatore2
       idPartita=id;
     }
+    
+    /*public void nuovaPedina(int r, int c){
+        if(campo.controllaValidita(r,c,turno)){
+            campo.getCasella(r, c).cambiaColore(turno);
+        }
+    }*/
 }
