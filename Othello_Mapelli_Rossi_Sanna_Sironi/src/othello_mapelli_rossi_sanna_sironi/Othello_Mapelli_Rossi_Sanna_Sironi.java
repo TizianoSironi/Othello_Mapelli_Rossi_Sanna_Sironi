@@ -13,8 +13,7 @@ public class Othello_Mapelli_Rossi_Sanna_Sironi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scacchiera s1 = new Scacchiera();
-        s1.print();
+        
     }
     
 }
