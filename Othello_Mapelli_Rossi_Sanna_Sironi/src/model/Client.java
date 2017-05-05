@@ -1,5 +1,4 @@
 package model;
-
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.*;
@@ -26,9 +25,7 @@ public class Client {
         }
         System.out.println("Numero: ");
         Numero = sc.nextInt();
-        p.println(Numero);temp = sc1.nextInt();
-        System.out.println(temp);
-        
-        
-    }*/
+        p.println(Numero);
+
+    }
 }

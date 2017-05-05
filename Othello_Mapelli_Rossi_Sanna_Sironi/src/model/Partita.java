@@ -15,12 +15,13 @@ public class Partita {
     String giocatore2;
     String ipGiocatore1;
     String ipGiocatore2;
-    int idPartita;
+    String idPartita;
     String colGiocatore1;
     String colGiocatore2;
     String turno;
-    public Partita(int id){
-      campo = new Scacchiera();  
+    public Partita(String id){
+      campo = new Scacchiera(); 
+      campo.print();
       //Avviare la Socket
       //La Socket prende i dati e li assegna 
       //giocatore1, giocatore2, ipGiocatore1, ipGiocatore2
