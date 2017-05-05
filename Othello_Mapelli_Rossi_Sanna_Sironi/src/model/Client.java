@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public class Client {
 
-    public static void main (String [] args) throws UnknownHostException, IOException{
+   /* public static void main (String [] args) throws UnknownHostException, IOException{
         
         int Numero;
         int temp;
@@ -30,5 +30,5 @@ public class Client {
         System.out.println(temp);
         
         
-    }
+    }*/
 }

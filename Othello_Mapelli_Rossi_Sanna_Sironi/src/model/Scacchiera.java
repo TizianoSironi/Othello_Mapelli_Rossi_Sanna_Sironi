@@ -54,42 +54,59 @@ public class Scacchiera {
                    // if (!mappa[r][c].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
                         if (!mappa[r+1][c].casellaVuota()){ //Controlla mossa in giù ↓
                             if (!mappa[r+1][c].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                                if(mappa[r+2][c].toString().equals(turno)){ //Controlla se la casella ↓↓ è dello stesso colore di chi sta giocando
+                                    mosseValide[r][c]=true;   
+                                }
                             }
                         }
                         if (!mappa[r+1][c+1].casellaVuota()){ //Controlla mossa in diagonale ↘ 
                             if (!mappa[r+1][c+1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                                if(mappa[r+2][c+2].toString().equals(turno)){ //Controlla se la casella ↘↘ è dello stesso colore di chi sta giocando 
+                                    mosseValide[r][c]=true;
+                                }
                             }
                         }
                         if (!mappa[r-1][c].casellaVuota()){ //Controlla mossa in alto ↑
                             if (!mappa[r-1][c].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                                if(mappa[r-2][c].toString().equals(turno)){ //Controlla se la casella ↑↑ è dello stesso colore di chi sta giocando
+                                    mosseValide[r][c]=true;
+                            }
                             }
                         }
                         if (!mappa[r-1][c-1].casellaVuota()){ //Controlla mossa in diagonale 	↖
                             if (!mappa[r-1][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
+                                if(mappa[r-2][c-2].toString().equals(turno)){ //Controlla se la casella ↖↖  è dello stesso colore di chi sta giocando
                                 mosseValide[r][c]=true;
+                            }  
                             }
                         }
                         if (!mappa[r][c+1].casellaVuota()){ //Controlla mossa a destra →
                             if (!mappa[r][c+1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                                if(mappa[r][c+2].toString().equals(turno)){ //Controlla se la casella →→ è dello stesso colore di chi sta gicocando
+                                    mosseValide[r][c]=true;
+                                }
                             }
                         }
                         if (!mappa[r][c-1].casellaVuota()){ //Controlla mossa a sinistra ←
                             if (!mappa[r][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                                if(mappa[r][c-2].toString().equals(turno)){ //Controlla se la casella ←← è dello stesso colore di chi sta giocando
+                                    mosseValide[r][c]=true;
+                                }
                             }
                         }
                         if (!mappa[r+1][c-1].casellaVuota()){ //Controlla mossa in diagonale ↙
                             if (!mappa[r+1][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                                if(mappa[r-1][c+1].toString().equals(turno)){ //Controlla se la ↗ casella è dello stesso colore di chi sta giocando
+                                    mosseValide[r][c]=true;                           
+                                }
+
                             }
                         }
                         if (!mappa[r-1][c+1].casellaVuota()){ //Controlla mossa in diagonale ↗
-                            if (!mappa[r-1][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
+                            if (!mappa[r-1][c+1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
+                                if(mappa[r+1][c-1].toString().equals(turno)){ //Controlla se la casella ↙ è dello stesso colore di chi sta giocando
+                                    mosseValide[r][c]=true;                                   
+                                }
                             }
                         }
                 //}
@@ -102,7 +119,7 @@ public class Scacchiera {
                 if (mosseValide [r][c]){
                     System.out.print("t");
                 } else {
-                    System.out.print("f");
+                   System.out.print(" ");
                 }
                 System.out.print(" | ");
             }
