@@ -41,17 +41,18 @@ public class OthelloServer extends Thread{
 
             Partita P1 = new Partita(id);
 
-            Scanner sc1 = new Scanner(client1.getInputStream());
-            Scanner sc2 = new Scanner(client2.getInputStream());
+            Scanner client1Input = new Scanner(client1.getInputStream());
+            Scanner client2Input = new Scanner(client2.getInputStream());
+            PrintStream client1Output = new PrintStream (client1.getOutputStream());
+            PrintStream client2Output = new PrintStream (client2.getOutputStream());
+            
+            client1Output.print(1);
+            client2Output.print("muori stronzo");
 
-            int c1 = sc1.nextInt();
-            int c2 = sc2.nextInt();
-
-            System.out.print("c1 dice stocazzo: " + c1 + " e c2 pure : " + c2);
-
-            //while (true) {
-            //  out.println(in.readLine());
-            //}
+            System.out.println(client1Input.next());
+            System.out.println(client2Input.next());
+            
+           // System.out.print("c1 dice: " + c1 + " e c2 pure : " + c2);
         } catch (IOException ex) {
             System.out.println(ex);
         }

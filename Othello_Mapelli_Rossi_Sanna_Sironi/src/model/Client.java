@@ -13,7 +13,7 @@ public class Client {
         int Numero;
         System.out.println("Client startato ");
         Scanner sc = new Scanner(System.in);
-        Socket s = new Socket("10.1.33.14",9999);
+        Socket s = new Socket("10.1.33.13",9999);
         Scanner sc1 = null;
         PrintStream p = null;
         try {
