@@ -28,7 +28,7 @@ public class Scacchiera {
         //getCasella (2,4).cambiaColore("B");
         getCasella (3,4).cambiaColore("B");
         getCasella (4,4).cambiaColore("B");
-        getCasella (5,4).cambiaColore("N");
+       
 //getCasella (1,4).cambiaColore("N");
         /*
         getCasella (5,5).cambiaColore("B");
@@ -76,7 +76,7 @@ public class Scacchiera {
                                             System.out.println("è vero!");
                                         }
                                         } else {
-                                            r1 =7;
+                                            r1=7;
                                         }
                                         /*if(!mappa[r1][c].toString().equals(turno)){
                                             mosseValide[r][c]=false;
@@ -99,7 +99,7 @@ public class Scacchiera {
                                     mosseValide[r][c]=true;
                             }
                             }
-                        }
+                        } 
                         if (!mappa[r-1][c-1].casellaVuota()){ //Controlla mossa in diagonale 	↖
                             if (!mappa[r-1][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
                                 if(mappa[r-2][c-2].toString().equals(turno)){ //Controlla se la casella ↖↖  è dello stesso colore di chi sta giocando
