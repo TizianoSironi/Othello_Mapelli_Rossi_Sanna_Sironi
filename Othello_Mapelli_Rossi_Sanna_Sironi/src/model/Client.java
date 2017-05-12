@@ -8,10 +8,9 @@ import java.util.logging.Logger;
 
 public class Client {
 
-   /* public static void main (String [] args) throws UnknownHostException, IOException{
+    public static void main (String [] args) throws UnknownHostException, IOException{
         
         int Numero;
-        int temp;
         System.out.println("Client startato ");
         Scanner sc = new Scanner(System.in);
         Socket s = new Socket("127.0.0.1",9999);
@@ -27,5 +26,5 @@ public class Client {
         Numero = sc.nextInt();
         p.println(Numero);
 
-    }*/
+    }
 }
