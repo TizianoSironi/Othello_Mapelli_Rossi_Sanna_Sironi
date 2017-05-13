@@ -11,8 +11,9 @@ public class Client {
     public static void main (String [] args) throws UnknownHostException, IOException{
         
         int Numero;
-        System.out.println("Client startato ");
+        System.out.println("Client startato. Attendo al connessione di un altro giocatore.");
         Scanner sc = new Scanner(System.in);
+        try{
         Socket s = new Socket("10.1.33.13",9999);
         Scanner sc1 = null;
         PrintStream p = null;
@@ -22,9 +23,13 @@ public class Client {
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
+    
+        
+        //System.out.println(sc1.next());
         System.out.println("Numero: ");
-        Numero = sc.nextInt();
-        p.println(Numero);
-
+        p.println(sc.nextInt());
+        } catch(Exception e){
+            System.err.println(e);
+        }
     }
 }
