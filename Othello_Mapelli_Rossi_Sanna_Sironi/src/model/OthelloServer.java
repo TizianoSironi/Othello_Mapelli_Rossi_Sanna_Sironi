@@ -46,11 +46,13 @@ public class OthelloServer extends Thread{
             PrintStream client1Output = new PrintStream (client1.getOutputStream());
             PrintStream client2Output = new PrintStream (client2.getOutputStream());
             
-            client1Output.print(1);
-            client2Output.print("muori stronzo");
-
-            System.out.println(client1Input.next());
-            System.out.println(client2Input.next());
+            if(client1Input.next().equals("connection;")){
+                client1Output.print("start: <nome>, <nero>");
+            }
+            if(client2Input.next().equals("connection;")){
+                client2Output.print("start: <nome>, <bianco>");
+            }
+           
             
            // System.out.print("c1 dice: " + c1 + " e c2 pure : " + c2);
         } catch (IOException ex) {
