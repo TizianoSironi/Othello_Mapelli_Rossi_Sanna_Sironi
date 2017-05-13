@@ -26,6 +26,8 @@ public class Client {
     
         
         //System.out.println(sc1.next());
+        
+        
         System.out.println("Numero: ");
         p.println(sc.nextInt());
         } catch(Exception e){
