@@ -41,15 +41,15 @@ public class OthelloServer extends Thread{
 
             Partita P1 = new Partita(id);
 
-            Scanner client1Input = new Scanner(client1.getInputStream());
-            Scanner client2Input = new Scanner(client2.getInputStream());
+            BufferedReader client1Input = new BufferedReader(new InputStreamReader(client1.getInputStream()));
+            BufferedReader client2Input = new BufferedReader(new InputStreamReader(client2.getInputStream()));
             PrintStream client1Output = new PrintStream (client1.getOutputStream());
             PrintStream client2Output = new PrintStream (client2.getOutputStream());
             
-            if(client1Input.next().equals("connection;")){
+            if(client1Input.equals("connection;")){
                 client1Output.print("start: <nome>, <nero>");
             }
-            if(client2Input.next().equals("connection;")){
+            if(client2Input.equals("connection;")){
                 client2Output.print("start: <nome>, <bianco>");
             }
            
