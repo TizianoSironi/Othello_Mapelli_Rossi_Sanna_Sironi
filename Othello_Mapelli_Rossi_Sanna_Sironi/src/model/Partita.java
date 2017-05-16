@@ -19,13 +19,15 @@ public class Partita {
     String colGiocatore1;
     String colGiocatore2;
     String turno;
+    boolean partitaAperta;
     public Partita(String id){
       campo = new Scacchiera(); 
       campo.print();
-      //Avviare la Socket
-      //La Socket prende i dati e li assegna 
-      //giocatore1, giocatore2, ipGiocatore1, ipGiocatore2
       idPartita=id;
+      partitaAperta=true;
+    }
+    public boolean inCorso(){
+        return partitaAperta;
     }
     
     /*public void nuovaPedina(int r, int c){
