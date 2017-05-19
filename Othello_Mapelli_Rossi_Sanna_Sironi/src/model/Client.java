@@ -14,6 +14,7 @@ public class Client {
     public static void main(String[] args) throws UnknownHostException, IOException {
         String indIP = "";
         int Numero;
+        String idClient;
         System.out.println("Client startato. Attendo al connessione di un altro giocatore.");
         Scanner sc = new Scanner(System.in);
        
@@ -25,8 +26,11 @@ public class Client {
             try {
                 serverInput = new BufferedReader (new InputStreamReader(server.getInputStream()));
                 serverOutput = new PrintStream(server.getOutputStream());
-                String messaggio = serverInput.readLine();
-                System.out.print(messaggio);
+                String messaggioServer =serverInput.readLine();
+                if (messaggioServer.startsWith("start: ")){
+                    idClient=messaggioServer.substring(messaggioServer.length()-3, messaggioServer.length()-2);
+                    System.out.println(idClient);
+                }
         } catch (Exception e) {
             System.err.println(e);
         }

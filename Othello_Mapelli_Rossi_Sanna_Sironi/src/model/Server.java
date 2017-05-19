@@ -21,7 +21,7 @@ public class Server {
                 System.out.println("sono server apro socket 9999 e aspetto");
                 Socket c1 = ss.accept();
                 Socket c2 = ss.accept();
-            
+                
             new OthelloServer(c1,c2, String.valueOf(partita)).start();
             partita++;
         }
