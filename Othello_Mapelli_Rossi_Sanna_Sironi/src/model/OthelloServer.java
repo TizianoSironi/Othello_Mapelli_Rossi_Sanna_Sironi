@@ -9,11 +9,11 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class OthelloServer extends Thread{
+public class OthelloServer extends Thread {
 
     private Socket client1;
     private Socket client2;
-    
+
     private String id;
 
     public OthelloServer(Socket c1, Socket c2, String str) {
@@ -26,17 +26,11 @@ public class OthelloServer extends Thread{
     public void run() {
 
         try {
-            
-            
-            
-            
-            
 
             /*while (connessioni < 2) {
                 clients[connessioni] = server.accept();
                 connessioni++;
             }*/
-
             System.out.println("due client si sono connessi");
 
             Partita partita = new Partita(id);
