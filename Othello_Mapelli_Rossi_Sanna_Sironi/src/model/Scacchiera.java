@@ -59,7 +59,29 @@ public class Scacchiera {
         mappa [r-1] [c-1] = cas;
     }
     
+    public int getPedineNere(){
+        int cont=0;
+        for (int r=0; r<8; r++){
+            for (int c=0; c<8; c++){
+                if (mappa[r][c].toString().equals("N")){
+                    cont++;
+                }
+            }
+        }
+        return cont;
+    }
     
+    public int getPedineBianche(){
+        int cont=0;
+        for (int r=0; r<8; r++){
+            for (int c=0; c<8; c++){
+                if (mappa[r][c].toString().equals("B")){
+                    cont++;
+                }
+            }
+        }
+        return cont;
+    }
         
     public void controllaValidita(String turno){
         for (int r=1; r<7; r++){ //Controllo dalla riga 1 alla riga 6

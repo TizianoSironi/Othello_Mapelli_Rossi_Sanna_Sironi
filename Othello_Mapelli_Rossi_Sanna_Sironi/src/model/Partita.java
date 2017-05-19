@@ -30,6 +30,14 @@ public class Partita {
         return partitaAperta;
     }
     
+    public int getPedineNere(){
+        return campo.getPedineNere();
+    }
+    
+    public int getPedineBianche(){
+        return campo.getPedineBianche();
+    }
+    
     /*public void nuovaPedina(int r, int c){
         if(campo.controllaValidita(r,c,turno)){
             campo.getCasella(r, c).cambiaColore(turno);
