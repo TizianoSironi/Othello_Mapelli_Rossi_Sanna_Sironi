@@ -31,7 +31,7 @@ public class OthelloServer extends Thread {
                 clients[connessioni] = server.accept();
                 connessioni++;
             }*/
-            System.out.println("due client si sono connessi");
+            System.out.println("Due client si sono connessi");
 
             Partita partita = new Partita(id);
 
@@ -48,34 +48,48 @@ public class OthelloServer extends Thread {
                 System.out.println("Secondo giocatore connesso, inizio la partita");
             }
             client1Output.print("start: <"+id+">, <N>;");
+            System.out.println("client1Output: start: <"+id+">, <N>;");
             client2Output.print("start: <"+id+">, <B>;");
+            System.out.println("client2Output: start: <"+id+">, <B>;");
             do{
                 do{
                     client1Output.print("round: <N>;");
+                    System.out.println("client1Output: round: <N>;");
                     client2Output.print("round: <N>;");
+                    System.out.println("client2Output: round: <N>;");
                     String messaggioC1 = client1Input.readLine();
+                    System.out.println("client1Input: "+messaggioC1);
                     int cordX = Integer.parseInt(messaggioC1.substring(10, 10));
                     int cordY = Integer.parseInt(messaggioC1.substring(15, 15));
                     if (true){ //Se la mossa è valida
                         client1Output.print("update: <N>, <"+cordX+">, <"+cordY+">;");
+                        System.out.println("client1Output: update: <N>, <"+cordX+">, <"+cordY+">;");
                         client2Output.print("update: <N>, <"+cordX+">, <"+cordY+">;");
+                        System.out.println("client2Output: update: <N>, <"+cordX+">, <"+cordY+">;");
                     } else {
                         client1Output.print("move not valid;");
+                        System.out.println("client1Output: move not valid;");
                     }
                 }while (false); //Controllare se la mossa è valida
                 
                 
                 while(partita.inCorso()){ //Mentre la partita è in corso e la mossa non è valida
                     client1Output.print("round: <B>;");
+                    System.out.println("client1Output: round: <B>;");
                     client2Output.print("round: <B>;");
+                    System.out.println("client2Output: round: <B>;");
                     String messaggioC2 = client2Input.readLine();
+                    System.out.println("client2Input:"+messaggioC2);
                     int cordX = Integer.parseInt(messaggioC2.substring(10, 10));
                     int cordY = Integer.parseInt(messaggioC2.substring(15, 15));
                     if (true){ //Se la mossa è valida
-                        client1Output.print("update: <N>, <"+cordX+">, <"+cordY+">;");
-                        client2Output.print("update: <N>, <"+cordX+">, <"+cordY+">;");
+                        client1Output.print("update: <B>, <"+cordX+">, <"+cordY+">;");
+                        System.out.println("client1Output: update: <b>, <"+cordX+">, <"+cordY+">;");
+                        client2Output.print("update: <B>, <"+cordX+">, <"+cordY+">;");
+                        System.out.println("client2Output: update: <B>, <"+cordX+">, <"+cordY+">;");
                     } else {
                         client2Output.print("move not valid;");
+                        System.out.println("client2Output: move not valid;");
                     }
                 } 
                 
@@ -83,7 +97,9 @@ public class OthelloServer extends Thread {
             int pedineBianche = partita.getPedineBianche();
             int pedineNere = partita.getPedineNere();
             client1Output.print("end: black, <"+pedineNere+">, white, <"+pedineBianche+">;");
+            System.out.println("client1Output: end: black, <"+pedineNere+">, white, <"+pedineBianche+">;");
             client2Output.print("end: black, <"+pedineNere+">, white, <"+pedineBianche+">;");
+            System.out.println("client1Output: end: black, <"+pedineNere+">, white, <"+pedineBianche+">;");
            
             
            // System.out.print("c1 dice: " + c1 + " e c2 pure : " + c2);
