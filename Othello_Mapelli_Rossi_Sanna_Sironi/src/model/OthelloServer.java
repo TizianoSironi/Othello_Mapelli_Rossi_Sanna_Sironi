@@ -59,8 +59,8 @@ public class OthelloServer extends Thread {
                     System.out.println("client2Output: round: <N>;");
                     String messaggioC1 = client1Input.readLine();
                     System.out.println("client1Input: "+messaggioC1);
-                    int cordX = Integer.parseInt(messaggioC1.substring(10, 10));
-                    int cordY = Integer.parseInt(messaggioC1.substring(15, 15));
+                    int cordX = Integer.parseInt(messaggioC1.substring(8, 9));
+                    int cordY = Integer.parseInt(messaggioC1.substring(13, 14));
                     if (true){ //Se la mossa è valida
                         client1Output.println("update: <N>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client1Output: update: <N>, <"+cordX+">, <"+cordY+">;");
