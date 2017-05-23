@@ -68,12 +68,13 @@ public class OthelloServer extends Thread {
                         System.out.println("client1Output: update: <N>, <"+cordX+">, <"+cordY+">;");
                         client2Output.println("update: <N>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client2Output: update: <N>, <"+cordX+">, <"+cordY+">;");
+                        partita.campo.getCasella(cordX, cordY).cambiaColore("N");
                     } else {
                         client1Output.println("move not valid;");
                         System.out.println("client1Output: move not valid;");
                     }
                 }
-                
+                partita.campo.print();
                 
                 while(i%2==1){ //Se la partita è in corso oppure la mossa non è valida
                     i++;
@@ -87,9 +88,10 @@ public class OthelloServer extends Thread {
                     int cordY = Integer.parseInt(messaggioC2.substring(13, 14));
                     if (true){ //Se la mossa è valida
                         client1Output.println("update: <B>, <"+cordX+">, <"+cordY+">;");
-                        System.out.println("client1Output: update: <b>, <"+cordX+">, <"+cordY+">;");
+                        System.out.println("client1Output: update: <B>, <"+cordX+">, <"+cordY+">;");
                         client2Output.println("update: <B>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client2Output: update: <B>, <"+cordX+">, <"+cordY+">;");
+                        partita.campo.getCasella(cordX, cordY).cambiaColore("B");
                     } else {
                         client2Output.println("move not valid;");
                         System.out.println("client2Output: move not valid;");
