@@ -51,8 +51,10 @@ public class OthelloServer extends Thread {
             System.out.println("client1Output: start: <"+id+">, <N>;");
             client2Output.println("start: <"+id+">, <B>;");
             System.out.println("client2Output: start: <"+id+">, <B>;");
+            int i = 0;
             do{
-                do{
+                while(i%2==0){ //Se la partita è in corso oppure la mossa non è valida
+                    i++;
                     client1Output.println("round: <N>;");
                     System.out.println("client1Output: round: <N>;");
                     client2Output.println("round: <N>;");
@@ -70,18 +72,19 @@ public class OthelloServer extends Thread {
                         client1Output.println("move not valid;");
                         System.out.println("client1Output: move not valid;");
                     }
-                }while (false); //Controllare se la mossa è valida
+                }
                 
                 
-                while(partita.inCorso()){ //Mentre la partita è in corso e la mossa non è valida
+                while(i%2==1){ //Se la partita è in corso oppure la mossa non è valida
+                    i++;
                     client1Output.println("round: <B>;");
                     System.out.println("client1Output: round: <B>;");
                     client2Output.println("round: <B>;");
                     System.out.println("client2Output: round: <B>;");
                     String messaggioC2 = client2Input.readLine();
                     System.out.println("client2Input:"+messaggioC2);
-                    int cordX = Integer.parseInt(messaggioC2.substring(10, 10));
-                    int cordY = Integer.parseInt(messaggioC2.substring(15, 15));
+                    int cordX = Integer.parseInt(messaggioC2.substring(8, 9));
+                    int cordY = Integer.parseInt(messaggioC2.substring(13, 14));
                     if (true){ //Se la mossa è valida
                         client1Output.println("update: <B>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client1Output: update: <b>, <"+cordX+">, <"+cordY+">;");
