@@ -17,7 +17,7 @@ public class PartitaTest {
         System.out.println();
         
         if (partita.campo.controllaValiditàOrizzontaleDestra(2, 2, "N")){
-            System.out.print("Figa è vero!");
+            System.out.println("Figa è vero!");
         }
         
         for (int r=0; r<8; r++){

@@ -27,7 +27,10 @@ public class Scacchiera {
         //getCasella (5,5).cambiaColore("B");
         //getCasella (2,4).cambiaColore("B");
         getCasella (3,4).cambiaColore("B");
-        getCasella (3,5).cambiaColore("B");
+        getCasella (3,5).cambiaColore("N");
+        //getCasella (3,6).cambiaColore("B");
+        //getCasella (3,7).cambiaColore("B");
+        //getCasella (3,8).cambiaColore("N");
        
 //getCasella (1,4).cambiaColore("N");
         /*
@@ -82,20 +85,47 @@ public class Scacchiera {
         }
         return cont;
     }
-    
+    /**
+     * 
+     * @param x Coordinate x della casella nella quale voglio mettere la pedina
+     * @param y Coordinate x della casella nella quale voglio mettere la pedina
+     * @param turno Indica chi è il colore che vuole mettere la pedina nella casella
+     * @return true se si può metterla, false se non è possibile metterla
+     */
     public boolean controllaValiditàOrizzontaleDestra(int x, int y, String turno){
-       if (x>7 || y>7){
-           return false;
-       } else {
-           if (mappa[x][y+1].toString().equals(turno) || mappa[x][y+1].casellaVuota()){ //se la casella successiva è uguale a quella del turno
-               return false;
-               return controllaValiditàOrizzontaleDestra(x, y+1, turno);
-           } else{
-               if 
-           }
-       }
+        if (!mappa[x][y].casellaVuota()){
+            return false;
+        } else{
+            if (y+1>7){
+                return false;
+            } else{
+            if ((!mappa[x][y+1].toString().equals(turno))){
+                if (y+2>7){
+                    return false;
+                } else{
+                    return step2VerificaOrizzontaleDestra(x, y+2, turno);
+                }
+            } else{
+                return false;
+            }
+            }
+        }
     }
 
+    private boolean step2VerificaOrizzontaleDestra(int x, int y, String turno){
+       
+            if (mappa[x][y].toString().equals(turno)){
+                return true;
+            } else if (mappa[x][y].casellaVuota()){
+                return false;
+            } else {
+                if (y+1>7){
+                return false;
+            } else{
+                    return step2VerificaOrizzontaleDestra(x, y+1, turno);
+                }
+            }
+    }
     
     public void controllaValidita(String turno){
         for (int r=1; r<7; r++){ //Controllo dalla riga 1 alla riga 6
