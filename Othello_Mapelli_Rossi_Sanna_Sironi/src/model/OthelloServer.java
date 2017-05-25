@@ -51,42 +51,47 @@ public class OthelloServer extends Thread {
             System.out.println("client1Output: start: <"+id+">, <N>;");
             client2Output.println("start: <"+id+">, <B>;");
             System.out.println("client2Output: start: <"+id+">, <B>;");
+            int i = 0;
             do{
-                do{
+                while(i%2==0){ //Se la partita è in corso oppure la mossa non è valida
+                    i++;
                     client1Output.println("round: <N>;");
                     System.out.println("client1Output: round: <N>;");
                     client2Output.println("round: <N>;");
                     System.out.println("client2Output: round: <N>;");
                     String messaggioC1 = client1Input.readLine();
                     System.out.println("client1Input: "+messaggioC1);
-                    int cordX = Integer.parseInt(messaggioC1.substring(10, 10));
-                    int cordY = Integer.parseInt(messaggioC1.substring(15, 15));
+                    int cordX = Integer.parseInt(messaggioC1.substring(8, 9));
+                    int cordY = Integer.parseInt(messaggioC1.substring(13, 14));
                     if (true){ //Se la mossa è valida
                         client1Output.println("update: <N>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client1Output: update: <N>, <"+cordX+">, <"+cordY+">;");
                         client2Output.println("update: <N>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client2Output: update: <N>, <"+cordX+">, <"+cordY+">;");
+                        partita.campo.getCasella(cordX, cordY).cambiaColore("N");
                     } else {
                         client1Output.println("move not valid;");
                         System.out.println("client1Output: move not valid;");
                     }
-                }while (false); //Controllare se la mossa è valida
+                }
+                partita.campo.print();
                 
-                
-                while(partita.inCorso()){ //Mentre la partita è in corso e la mossa non è valida
+                while(i%2==1){ //Se la partita è in corso oppure la mossa non è valida
+                    i++;
                     client1Output.println("round: <B>;");
                     System.out.println("client1Output: round: <B>;");
                     client2Output.println("round: <B>;");
                     System.out.println("client2Output: round: <B>;");
                     String messaggioC2 = client2Input.readLine();
                     System.out.println("client2Input:"+messaggioC2);
-                    int cordX = Integer.parseInt(messaggioC2.substring(10, 10));
-                    int cordY = Integer.parseInt(messaggioC2.substring(15, 15));
+                    int cordX = Integer.parseInt(messaggioC2.substring(8, 9));
+                    int cordY = Integer.parseInt(messaggioC2.substring(13, 14));
                     if (true){ //Se la mossa è valida
                         client1Output.println("update: <B>, <"+cordX+">, <"+cordY+">;");
-                        System.out.println("client1Output: update: <b>, <"+cordX+">, <"+cordY+">;");
+                        System.out.println("client1Output: update: <B>, <"+cordX+">, <"+cordY+">;");
                         client2Output.println("update: <B>, <"+cordX+">, <"+cordY+">;");
                         System.out.println("client2Output: update: <B>, <"+cordX+">, <"+cordY+">;");
+                        partita.campo.getCasella(cordX, cordY).cambiaColore("B");
                     } else {
                         client2Output.println("move not valid;");
                         System.out.println("client2Output: move not valid;");
