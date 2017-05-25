@@ -27,7 +27,7 @@ public class Scacchiera {
         //getCasella (5,5).cambiaColore("B");
         //getCasella (2,4).cambiaColore("B");
         getCasella (3,4).cambiaColore("B");
-        getCasella (4,4).cambiaColore("B");
+        getCasella (3,5).cambiaColore("B");
        
 //getCasella (1,4).cambiaColore("N");
         /*
@@ -82,7 +82,21 @@ public class Scacchiera {
         }
         return cont;
     }
-        
+    
+    public boolean controllaValiditàOrizzontaleDestra(int x, int y, String turno){
+       if (x>7 || y>7){
+           return false;
+       } else {
+           if (mappa[x][y+1].toString().equals(turno) || mappa[x][y+1].casellaVuota()){ //se la casella successiva è uguale a quella del turno
+               return false;
+               return controllaValiditàOrizzontaleDestra(x, y+1, turno);
+           } else{
+               if 
+           }
+       }
+    }
+
+    
     public void controllaValidita(String turno){
         for (int r=1; r<7; r++){ //Controllo dalla riga 1 alla riga 6
             for (int c=1; c<7; c++){ //Controllo dalla colonna 1 alla colonna 6
