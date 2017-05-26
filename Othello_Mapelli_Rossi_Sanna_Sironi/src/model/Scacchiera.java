@@ -30,16 +30,16 @@ public class Scacchiera {
                 mosseValide [r][c] = false;
             }
         }
-        //getCasella (4,4).cambiaColore("B");
-        //getCasella (4,5).cambiaColore("B");
-        //getCasella (5,4).cambiaColore("B");
-        //getCasella (5,5).cambiaColore("B");
-        //getCasella (2,4).cambiaColore("B");
-        //getCasella (1,5).cambiaColore("N");
-      //fff  getCasella (3,5).cambiaColore("B");
-        //getCasella (3,6).cambiaColore("B");
         getCasella (4,4).cambiaColore("N");
-        //getCasella (3,8).cambiaColore("N");
+        getCasella (4,5).cambiaColore("B");
+        getCasella (5,4).cambiaColore("B");
+        getCasella (5,5).cambiaColore("B");
+        getCasella (2,4).cambiaColore("B");
+        getCasella (1,5).cambiaColore("N");
+        getCasella (3,5).cambiaColore("B");
+        getCasella (3,6).cambiaColore("B");
+        getCasella (4,4).cambiaColore("N");
+        getCasella (3,8).cambiaColore("N");
        
 //getCasella (1,4).cambiaColore("N");
         /*
@@ -169,9 +169,9 @@ public class Scacchiera {
                     break;
                 case OB_BD:
                     newX = x+1;
-                    newY = y-1;
+                    newY = y+1;
                     newnewX = x+2;
-                    newnewY = y-2;
+                    newnewY = y+2;
                     System.out.println("Controllo la validità nel senso OB_BD");
                     break;
                 case OB_BS:
@@ -187,7 +187,7 @@ public class Scacchiera {
                 System.out.println("Sto sforando le dimensioni della mappa (1)");
                 return false;
             } else{
-                if ((!mappa[newX][newY].toString().equals(turno))) {
+                if ((!mappa[newX][newY].toString().equals(turno))&&(!mappa[newX][newY].casellaVuota())) {
                 if (newnewX>7||newnewY>7||newnewX<0||newnewY<0) {
                     System.out.println("Sto sforando le dimensioni della mappa (2)");
                     return false;
@@ -234,7 +234,7 @@ public class Scacchiera {
                     break;
                 case OB_BD:
                     newX = x+1;
-                    newY = y-1;
+                    newY = y+1;
                     break;
                 case OB_BS:
                     newX = x+1;
