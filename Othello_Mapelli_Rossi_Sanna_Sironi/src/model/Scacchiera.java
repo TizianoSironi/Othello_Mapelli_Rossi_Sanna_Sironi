@@ -34,11 +34,11 @@ public class Scacchiera {
         //getCasella (4,5).cambiaColore("B");
         //getCasella (5,4).cambiaColore("B");
         //getCasella (5,5).cambiaColore("B");
-        getCasella (3,3).cambiaColore("N");
-        getCasella (3,4).cambiaColore("B");
-        getCasella (3,5).cambiaColore("B");
-        getCasella (3,6).cambiaColore("B");
-        //getCasella (3,7).cambiaColore("B");
+        //getCasella (2,4).cambiaColore("B");
+        //getCasella (1,5).cambiaColore("N");
+      //fff  getCasella (3,5).cambiaColore("B");
+        //getCasella (3,6).cambiaColore("B");
+        getCasella (4,4).cambiaColore("N");
         //getCasella (3,8).cambiaColore("N");
        
 //getCasella (1,4).cambiaColore("N");
@@ -94,6 +94,19 @@ public class Scacchiera {
         }
         return cont;
     }
+    
+    public void mosseValide(String turno){
+        for (int r=0; r<8; r++){
+            for (int c=0; c<8; c++){
+                for (int i=0; i<8; i++){
+                    if (controllaValiditàMossa(r,c,turno,i)){
+                        mosseValide[r][c]=true;
+                        System.out.println("HO TROVATO UNA CASELLA CHE é VALIDA+++++++++++++++++++++++++++++++      "+r + c);
+                    }
+                }
+            }
+        }
+    }
     /**
      * 
      * @param x Coordinate x della casella nella quale voglio mettere la pedina
@@ -124,51 +137,59 @@ public class Scacchiera {
                      newnewX = x;
                      newY = y - 1;
                      newnewY = y - 2;
+                     System.out.println("Controllo la validità nel senso ->");
                     break;
                 case VR_BS:
                     newX = x + 1;
                     newnewX = x+2;
                     newY = y;
                     newnewY = y;
+                    System.out.println("Controllo la validità nel senso V");
                     break;
                 case VR_AT:
                     newX = x-1;
                     newY = y;
                     newnewX = x-2;
                     newnewY = y;
+                    System.out.println("Controllo la validità nel senso ^");
                     break;
                 case OB_AD:
                     newX = x-1;
                     newY = y+1;
                     newnewX = x-2;
                     newnewY = y+2;
+                    System.out.println("Controllo la validità nel senso OB_AD");
                     break;
                 case OB_AS:
                     newX = x-1;
                     newY = y-1;
                     newnewX = x-2;
                     newnewY = y-2;
+                    System.out.println("Controllo la validità nel senso OB_AS");
                     break;
                 case OB_BD:
                     newX = x+1;
                     newY = y-1;
                     newnewX = x+2;
                     newnewY = y-2;
+                    System.out.println("Controllo la validità nel senso OB_BD");
                     break;
                 case OB_BS:
                     newX = x+1;
                     newY = y-1;
                     newnewX = x+2;
                     newnewY = y-2;
+                    System.out.println("Controllo la validità nel senso OB_BS");
                     break;
                
             }
             if (newY > 7||newX > 7||newY < 0||newX < 0) {
+                System.out.println("Sto sforando le dimensioni della mappa (1)");
                 return false;
             } else{
                 if ((!mappa[newX][newY].toString().equals(turno))) {
                 if (newnewX>7||newnewY>7||newnewX<0||newnewY<0) {
-                    System.out.println("Sto sforando le dimensioni della mappa");
+                    System.out.println("Sto sforando le dimensioni della mappa (2)");
                     return false;
                     
                 } else {
