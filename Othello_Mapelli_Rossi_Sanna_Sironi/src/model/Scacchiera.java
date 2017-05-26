@@ -10,8 +10,17 @@ package model;
  * @author rossi.alessandroachi
  */
 public class Scacchiera {
+    
     Casella mappa [][];
     boolean mosseValide [][];
+    final int HR_DX = 0; 
+    final int HR_SX = 1;
+    final int VR_AT = 2; 
+    final int VR_BS = 3;
+    final int OB_AD = 4; 
+    final int OB_AS = 5;
+    final int OB_BD = 6; 
+    final int OB_BS = 7;
     public Scacchiera(){
         mappa = new Casella [8][8];
         mosseValide = new boolean [8][8];
@@ -25,10 +34,10 @@ public class Scacchiera {
         //getCasella (4,5).cambiaColore("B");
         //getCasella (5,4).cambiaColore("B");
         //getCasella (5,5).cambiaColore("B");
-        //getCasella (2,4).cambiaColore("B");
+        getCasella (3,3).cambiaColore("N");
         getCasella (3,4).cambiaColore("B");
-        getCasella (3,5).cambiaColore("N");
-        //getCasella (3,6).cambiaColore("B");
+        getCasella (3,5).cambiaColore("B");
+        getCasella (3,6).cambiaColore("B");
         //getCasella (3,7).cambiaColore("B");
         //getCasella (3,8).cambiaColore("N");
        
@@ -90,43 +99,150 @@ public class Scacchiera {
      * @param x Coordinate x della casella nella quale voglio mettere la pedina
      * @param y Coordinate x della casella nella quale voglio mettere la pedina
      * @param turno Indica chi è il colore che vuole mettere la pedina nella casella
+     * @param dir Indica in che direzione controllare la mosssa
      * @return true se si può metterla, false se non è possibile metterla
      */
-    public boolean controllaValiditàOrizzontaleDestra(int x, int y, String turno){
+    public boolean controllaValiditàMossa(int x, int y, String turno, int dir){
+        
         if (!mappa[x][y].casellaVuota()){
             return false;
-        } else{
-            if (y+1>7){
+        } else {
+            int newX = 0;
+            int newY = 0;
+            int newnewX = 0;
+            int newnewY = 0;
+            switch (dir) {
+                case HR_DX:
+                     newX = x;
+                     newnewX = x;
+                     newY = y + 1;
+                     newnewY = y + 2;
+                     System.out.println("Controllo la validità nel senso ->");
+                    break;
+                case HR_SX:
+                     newX = x;
+                     newnewX = x;
+                     newY = y - 1;
+                     newnewY = y - 2;
+                    break;
+                case VR_BS:
+                    newX = x + 1;
+                    newnewX = x+2;
+                    newY = y;
+                    newnewY = y;
+                    break;
+                case VR_AT:
+                    newX = x-1;
+                    newY = y;
+                    newnewX = x-2;
+                    newnewY = y;
+                    break;
+                case OB_AD:
+                    newX = x-1;
+                    newY = y+1;
+                    newnewX = x-2;
+                    newnewY = y+2;
+                    break;
+                case OB_AS:
+                    newX = x-1;
+                    newY = y-1;
+                    newnewX = x-2;
+                    newnewY = y-2;
+                    break;
+                case OB_BD:
+                    newX = x+1;
+                    newY = y-1;
+                    newnewX = x+2;
+                    newnewY = y-2;
+                    break;
+                case OB_BS:
+                    newX = x+1;
+                    newY = y-1;
+                    newnewX = x+2;
+                    newnewY = y-2;
+                    break;
+               
+            }
+            if (newY > 7||newX > 7||newY < 0||newX < 0) {
                 return false;
             } else{
-            if ((!mappa[x][y+1].toString().equals(turno))){
-                if (y+2>7){
+                if ((!mappa[newX][newY].toString().equals(turno))) {
+                if (newnewX>7||newnewY>7||newnewX<0||newnewY<0) {
+                    System.out.println("Sto sforando le dimensioni della mappa");
                     return false;
-                } else{
-                    return step2VerificaOrizzontaleDestra(x, y+2, turno);
+                    
+                } else {
+                    System.out.println("Inizio il controllo ricorsivo");
+                    return step2controlloValiditàMossa(newnewX, newnewY, turno, dir);
                 }
-            } else{
+            } else {
                 return false;
             }
-            }
+           }
         }
     }
 
-    private boolean step2VerificaOrizzontaleDestra(int x, int y, String turno){
+    private boolean step2controlloValiditàMossa(int x, int y, String turno, int dir){
+        
+        int newX = 0;
+        int newY = 0;
+            switch (dir) {
+                case HR_DX:
+                     newX = x;
+                     newY = y + 1;
+                    break;
+                case HR_SX:
+                     newX = x;
+                     newY = y - 1;
+                    break;
+                case VR_BS:
+                    newX = x + 1;
+                    newY = y;
+                    break;
+                case VR_AT:
+                    newX = x-1;
+                    newY = y;
+                    break;
+                case OB_AD:
+                    newX = x-1;
+                    newY = y+1;
+                    break;
+                case OB_AS:
+                    newX = x-1;
+                    newY = y-1;
+                    break;
+                case OB_BD:
+                    newX = x+1;
+                    newY = y-1;
+                    break;
+                case OB_BS:
+                    newX = x+1;
+                    newY = y-1;
+                    break;
+               
+            }
        
             if (mappa[x][y].toString().equals(turno)){
+                System.out.println("Va bene, mossa valida");
                 return true;
             } else if (mappa[x][y].casellaVuota()){
+                System.out.println("Hai vicino una casella vuota, non puoi mettere la pedina");
                 return false;
             } else {
-                if (y+1>7){
-                return false;
+                if (newX > 7||newY > 7||newX < 0||newY < 0){
+                    System.out.println("Stai sforando le dimensioni della mappa");
+                    return false;
             } else{
-                    return step2VerificaOrizzontaleDestra(x, y+1, turno);
+                    System.out.println("Hai vicino una casella del colore opposto, continuo controllo ricorsivo");
+                    return step2controlloValiditàMossa(newX, newY, turno, dir);
                 }
             }
     }
     
+    /**
+     * 
+     * @deprecated Non funzionante 
+     */
     public void controllaValidita(String turno){
         for (int r=1; r<7; r++){ //Controllo dalla riga 1 alla riga 6
             for (int c=1; c<7; c++){ //Controllo dalla colonna 1 alla colonna 6
