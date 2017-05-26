@@ -16,9 +16,7 @@ public class PartitaTest {
         System.out.println();
         System.out.println();
         
-        if (partita.campo.controllaValiditàMossa(2, 6, "N", 1)){
-            System.out.println("Figa è vero!");
-        }
+       
         partita.campo.mosseValide("N");
         for (int r=0; r<8; r++){
             for (int c=0; c<8; c++){
