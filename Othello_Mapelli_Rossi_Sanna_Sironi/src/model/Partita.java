@@ -27,6 +27,7 @@ public class Partita {
       partitaAperta=true;
     }
     public boolean inCorso(){
+        
         return partitaAperta;
     }
     
