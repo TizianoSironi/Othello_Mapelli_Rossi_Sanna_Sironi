@@ -16,16 +16,14 @@ public class PartitaTest {
         System.out.println();
         System.out.println();
         
-        if (partita.campo.controllaValiditàMossa(2, 6, "N", 1)){
-            System.out.println("Figa è vero!");
-        }
-        
+       
+        partita.campo.mosseValide("N");
         for (int r=0; r<8; r++){
             for (int c=0; c<8; c++){
                 if (partita.campo.mosseValide[r][c]){
                         System.out.print ("t | ");
                 } else {
-                        System.out.print ("f | ");
+                        System.out.print ("  | ");
                 }
             }
             System.out.println();
