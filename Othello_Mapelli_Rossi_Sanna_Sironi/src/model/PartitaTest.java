@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.util.Scanner;
+
 /**
  *
  * @author AlessandroAchille
@@ -15,9 +17,9 @@ public class PartitaTest {
         Partita partita = new Partita("Partita di Testo");
         System.out.println();
         System.out.println();
-        
+        Scanner sc = new Scanner (System.in);
        
-        partita.campo.mosseValide("N");
+        partita.campo.calcolaMosseValide("N");
         for (int r=0; r<8; r++){
             for (int c=0; c<8; c++){
                 if (partita.campo.mosseValide[r][c]){
@@ -28,5 +30,9 @@ public class PartitaTest {
             }
             System.out.println();
         }
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        partita.campo.posizionaNuovaCasella(a, b, "N");
+        partita.campo.print();
     }
 }
