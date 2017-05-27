@@ -30,16 +30,16 @@ public class Scacchiera {
                 mosseValide [r][c] = false;
             }
         }
-        //getCasella (4,4).cambiaColore("B");
-        //getCasella (4,5).cambiaColore("B");
-        //getCasella (5,4).cambiaColore("B");
-        //getCasella (5,5).cambiaColore("B");
-        //getCasella (2,4).cambiaColore("B");
-        //getCasella (1,5).cambiaColore("N");
-      //fff  getCasella (3,5).cambiaColore("B");
-        //getCasella (3,6).cambiaColore("B");
+        /*getCasella (4,4).cambiaColore("N");
+        getCasella (4,5).cambiaColore("B");
+        getCasella (5,4).cambiaColore("B");
+        getCasella (5,5).cambiaColore("B");
+        getCasella (2,4).cambiaColore("B");
+        getCasella (1,5).cambiaColore("N");
+        getCasella (3,5).cambiaColore("B");
+        getCasella (3,6).cambiaColore("B");
         getCasella (4,4).cambiaColore("N");
-        //getCasella (3,8).cambiaColore("N");
+        getCasella (3,8).cambiaColore("N");*/
        
 //getCasella (1,4).cambiaColore("N");
         /*
@@ -70,7 +70,10 @@ public class Scacchiera {
     public void setCasella (int r, int c, Casella cas){
         mappa [r-1] [c-1] = cas;
     }
-    
+    /**
+     * 
+     * @return Il numero di pedine nere presenti sulla scacchiera
+     */
     public int getPedineNere(){
         int cont=0;
         for (int r=0; r<8; r++){
@@ -82,7 +85,9 @@ public class Scacchiera {
         }
         return cont;
     }
-    
+    /**
+     * @return Il numero di pedine bianche presenti sulla scacchiera
+     */
     public int getPedineBianche(){
         int cont=0;
         for (int r=0; r<8; r++){
@@ -95,13 +100,20 @@ public class Scacchiera {
         return cont;
     }
     
+    public void posizionaNuovaCasella(int x, int y, String col){
+        mosseValide(col);
+        if (mosseValide[x][y]){
+            
+        }
+    }
+    
+    
     public void mosseValide(String turno){
         for (int r=0; r<8; r++){
             for (int c=0; c<8; c++){
                 for (int i=0; i<8; i++){
                     if (controllaValiditàMossa(r,c,turno,i)){
                         mosseValide[r][c]=true;
-                        System.out.println("HO TROVATO UNA CASELLA CHE é VALIDA+++++++++++++++++++++++++++++++      "+r + c);
                     }
                 }
             }
@@ -115,7 +127,7 @@ public class Scacchiera {
      * @param dir Indica in che direzione controllare la mosssa
      * @return true se si può metterla, false se non è possibile metterla
      */
-    public boolean controllaValiditàMossa(int x, int y, String turno, int dir){
+    private boolean controllaValiditàMossa(int x, int y, String turno, int dir){
         
         if (!mappa[x][y].casellaVuota()){
             return false;
@@ -169,9 +181,9 @@ public class Scacchiera {
                     break;
                 case OB_BD:
                     newX = x+1;
-                    newY = y-1;
+                    newY = y+1;
                     newnewX = x+2;
-                    newnewY = y-2;
+                    newnewY = y+2;
                     System.out.println("Controllo la validità nel senso OB_BD");
                     break;
                 case OB_BS:
@@ -187,7 +199,7 @@ public class Scacchiera {
                 System.out.println("Sto sforando le dimensioni della mappa (1)");
                 return false;
             } else{
-                if ((!mappa[newX][newY].toString().equals(turno))) {
+                if ((!mappa[newX][newY].toString().equals(turno))&&(!mappa[newX][newY].casellaVuota())) {
                 if (newnewX>7||newnewY>7||newnewX<0||newnewY<0) {
                     System.out.println("Sto sforando le dimensioni della mappa (2)");
                     return false;
@@ -234,7 +246,7 @@ public class Scacchiera {
                     break;
                 case OB_BD:
                     newX = x+1;
-                    newY = y-1;
+                    newY = y+1;
                     break;
                 case OB_BS:
                     newX = x+1;
@@ -259,101 +271,4 @@ public class Scacchiera {
                 }
             }
     }
-    
-    /**
-     * 
-     * @deprecated Non funzionante 
-     */
-    public void controllaValidita(String turno){
-        for (int r=1; r<7; r++){ //Controllo dalla riga 1 alla riga 6
-            for (int c=1; c<7; c++){ //Controllo dalla colonna 1 alla colonna 6
-                if (mappa[r][c].casellaVuota()){ //Controlla se la casella è vuota
-                   // if (!mappa[r][c].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                   
-                            if (!mappa[r+1][c].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                    for (int r1=(r+1); r1<7&&!mosseValide[r][c]; r1++){ //Controlla se la casella ↓↓ è dello stesso colore di chi sta giocando oppure se ci siano delle altre pedine di altri colori seguite da un'opposto                                   
-                                        //Controlare se vuota
-                                        if (!mappa[r1][c].casellaVuota()){
-                                        if(mappa[r1+1][c].toString().equals(turno)){
-                                            mosseValide[r][c]=true;
-                                            System.out.println("è vero!");
-                                        }
-                                        } else {
-                                            r1=7;
-                                        }
-                                        /*if(!mappa[r1][c].toString().equals(turno)){
-                                            mosseValide[r][c]=false;
-                                        }*/
-                                    }
-                            
-                            }
-                        
-                }
-                        if (!mappa[r+1][c+1].casellaVuota()){ //Controlla mossa in diagonale ↘ 
-                            if (!mappa[r+1][c+1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r+2][c+2].toString().equals(turno)){ //Controlla se la casella ↘↘ è dello stesso colore di chi sta giocando 
-                                    mosseValide[r][c]=true;
-                                }
-                            }
-                        }
-                        if (!mappa[r-1][c].casellaVuota()){ //Controlla mossa in alto ↑
-                            if (!mappa[r-1][c].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r-2][c].toString().equals(turno)){ //Controlla se la casella ↑↑ è dello stesso colore di chi sta giocando
-                                    mosseValide[r][c]=true;
-                            }
-                            }
-                        } 
-                        if (!mappa[r-1][c-1].casellaVuota()){ //Controlla mossa in diagonale 	↖
-                            if (!mappa[r-1][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r-2][c-2].toString().equals(turno)){ //Controlla se la casella ↖↖  è dello stesso colore di chi sta giocando
-                                mosseValide[r][c]=true;
-                            }  
-                            }
-                        }
-                        if (!mappa[r][c+1].casellaVuota()){ //Controlla mossa a destra →
-                            if (!mappa[r][c+1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r][c+2].toString().equals(turno)){ //Controlla se la casella →→ è dello stesso colore di chi sta gicocando
-                                    mosseValide[r][c]=true;
-                                }
-                            }
-                        }
-                        if (!mappa[r][c-1].casellaVuota()){ //Controlla mossa a sinistra ←
-                            if (!mappa[r][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r][c-2].toString().equals(turno)){ //Controlla se la casella ←← è dello stesso colore di chi sta giocando
-                                    mosseValide[r][c]=true;
-                                }
-                            }
-                        }
-                        if (!mappa[r+1][c-1].casellaVuota()){ //Controlla mossa in diagonale ↙
-                            if (!mappa[r+1][c-1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r+2][c-2].toString().equals(turno)){ //Controlla se la ↗ casella è dello stesso colore di chi sta giocando
-                                    mosseValide[r][c]=true;                           
-                                }
-
-                            }
-                        }
-                        if (!mappa[r-1][c+1].casellaVuota()){ //Controlla mossa in diagonale ↗
-                            if (!mappa[r-1][c+1].toString().equals(turno)){ //Controlla se la casella non è dello stesso colore di chi sta giocando
-                                if(mappa[r-2][c+2].toString().equals(turno)){ //Controlla se la casella ↙ è dello stesso colore di chi sta giocando
-                                    mosseValide[r][c]=true;                                   
-                                }
-                            }
-                        }
-                //}
-            }
-        }
-
-        
-        for (int r=0; r<8; r++){
-            for (int c=0; c<8; c++){
-                if (mosseValide [r][c]){
-                    System.out.print("t");
-                } else {
-                   System.out.print(" ");
-                }
-                System.out.print(" | ");
-            }
-            System.out.println ();
-        }
-}
 }
