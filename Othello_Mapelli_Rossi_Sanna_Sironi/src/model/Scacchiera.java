@@ -26,11 +26,11 @@ public class Scacchiera {
         mosseValide = new boolean [8][8];
         for (int r=0; r<8; r++){
             for (int c=0; c<8; c++){
-                   mappa [r][c] = new Casella(r,c);
+                mappa [r][c] = new Casella(r,c);
                 mosseValide [r][c] = false;
             }
         }
-        getCasella (4,3).cambiaColore("B");
+        //getCasella (4,3).cambiaColore("B");
         getCasella (4,4).cambiaColore("B");
         getCasella (4,5).cambiaColore("N");
         getCasella (5,4).cambiaColore("N");
@@ -324,7 +324,6 @@ public class Scacchiera {
     }
     
     private boolean controllaValiditàMossaCambiaColore(int x, int y, String turno, int dir){
-        System.out.println ("Inizio a cambiare colore");
         if (!mappa[x][y].casellaVuota()){
             return false;
         } else {
@@ -401,12 +400,14 @@ public class Scacchiera {
                     return false;
                     
                 } else {
-                    System.out.println("Inizio il controllo ricorsivo"+ newX + newY);
+                    //System.out.println("Inizio il controllo ricorsivo"+ newX + newY);
                     mappa[newX][newY].cambiaColore(turno);
                     return step2controlloValiditàMossaCambiaColore(newnewX, newnewY, turno, dir);
                 }
             } else {
+                System.out.println("Non puoi mettere la pedina");
                 return false;
+                
             }
            }
         }
@@ -453,17 +454,17 @@ public class Scacchiera {
             }
        
             if (mappa[x][y].toString().equals(turno)){
-                System.out.println("Va bene, mossa valida " + x + y);
+                System.out.println("Va bene, mossa valida " );
                 return true;
             } else if (mappa[x][y].casellaVuota()){
-                //System.out.println("Hai vicino una casella vuota, non puoi mettere la pedina");
+                System.out.println("Hai vicino una casella vuota, non puoi mettere la pedina");
                 return false;
             } else {
                 if (newX > 7||newY > 7||newX < 0||newY < 0){
-                    //System.out.println("Stai sforando le dimensioni della mappa");
+                    System.out.println("Non puoi mettere la pedina");
                     return false;
             } else{
-                    System.out.println("Hai vicino una casella del colore opposto, continuo controllo ricorsivo "+ x + y);
+                    //System.out.println("Hai vicino una casella del colore opposto, continuo controllo ricorsivo "+ x + y);
                     mappa[x][y].cambiaColore(turno);
                     return step2controlloValiditàMossaCambiaColore(newX, newY, turno, dir);
                 }
