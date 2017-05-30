@@ -20,19 +20,20 @@ public class PartitaTest {
         Scanner sc = new Scanner (System.in);
        
         partita.campo.calcolaMosseValide("N");
-        for (int r=0; r<8; r++){
-            for (int c=0; c<8; c++){
-                if (partita.campo.mosseValide[r][c]){
-                        System.out.print ("t | ");
-                } else {
-                        System.out.print ("  | ");
-                }
+        do{
+            String oppC;
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            String c = sc.next();
+            partita.campo.calcolaMosseValide(c);
+            partita.campo.posizionaNuovaCasella(a, b, c);
+            if (c.equals("N")){
+                oppC = "B";
+            } else{
+                oppC ="N";
             }
-            System.out.println();
-        }
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        partita.campo.posizionaNuovaCasella(a, b, "N");
-        partita.campo.print();
-    }
+            partita.campo.print();
+            partita.campo.calcolaMosseValide(oppC);
+    } while (partita.inCorso());
+}
 }

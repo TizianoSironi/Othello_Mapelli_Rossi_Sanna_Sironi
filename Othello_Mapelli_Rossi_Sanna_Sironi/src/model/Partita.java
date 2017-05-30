@@ -27,7 +27,18 @@ public class Partita {
       partitaAperta=true;
     }
     public boolean inCorso(){
-        
+        boolean temp= true;
+        for (int r=0; ((r<8) && (temp == true)); r++){
+            for (int c=0; ((c<8)&&(temp==true)); c++){
+                if(campo.mappa[r][c].casellaVuota()){
+                    temp=false;
+                }
+                if(campo.mosseValide[r][c]){
+                    temp=false;
+                }
+            }
+        }
+        partitaAperta = !temp;
         return partitaAperta;
     }
     
