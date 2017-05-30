@@ -145,13 +145,16 @@ public class Scacchiera {
             } else {
                 direzioniValide[7] = false;
             }
-
+            boolean oneDirValid = false;
             for (int i=0; i<8; i++){
                 if (mosseValide[x][y] && direzioniValide[i]){
                     controllaValiditàMossaCambiaColore(x,y,col,i);
-                    mappa[x][y].cambiaColore(col);
+                    oneDirValid=true;
                     System.out.println("Ho cambiato i colori delle pedine");
                 }
+            }
+            if (oneDirValid){
+                mappa[x][y].cambiaColore(col);
             }
         } else{
             System.out.println("Non puoi mettere la pedina in quella casella.");
