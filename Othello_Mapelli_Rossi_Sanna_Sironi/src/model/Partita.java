@@ -11,13 +11,7 @@ package model;
  */
 public class Partita {
     Scacchiera campo;
-    String giocatore1;
-    String giocatore2;
-    String ipGiocatore1;
-    String ipGiocatore2;
     String idPartita;
-    String colGiocatore1;
-    String colGiocatore2;
     String turno;
     boolean partitaAperta;
     public Partita(String id){
@@ -30,15 +24,17 @@ public class Partita {
         boolean temp= true;
         for (int r=0; ((r<8) && (temp == true)); r++){
             for (int c=0; ((c<8)&&(temp==true)); c++){
-                if(campo.mappa[r][c].casellaVuota()){
+               /* if(campo.mappa[r][c].casellaVuota()){
                     temp=false;
-                }
+                }*/
                 if(campo.mosseValide[r][c]){
+                    System.out.println(r + ", " + c +" : " + campo.mosseValide[r][c] );
                     temp=false;
                 }
             }
         }
         partitaAperta = !temp;
+        System.out.println(!temp ? "partita aperta" : " partita chiusa" );
         return partitaAperta;
     }
     
