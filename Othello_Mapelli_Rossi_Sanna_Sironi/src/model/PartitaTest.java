@@ -8,17 +8,16 @@ import java.util.Scanner;
 
 /**
  *
- * @author AlessandroAchille
+ * @author AlessandroAchille ROSSI
  * 
 **/
 
 public class PartitaTest {
-    public static void main (String arg[]){
+    /*public static void main (String arg[]){
         Partita partita = new Partita("Partita di Testo");
         System.out.println();
         System.out.println();
         Scanner sc = new Scanner (System.in);
-       
         partita.campo.calcolaMosseValide("N");
         do{
             String oppC;
@@ -35,5 +34,5 @@ public class PartitaTest {
             partita.campo.print();
             partita.campo.calcolaMosseValide(oppC);
     } while (partita.inCorso());
-}
+}*/
 }
