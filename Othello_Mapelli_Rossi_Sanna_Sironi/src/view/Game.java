@@ -8,7 +8,7 @@ import model.ClasseModel;
 import java.io.IOException;
 import javax.swing.JButton;
 import model.Server;
-import toImplement.ConnectionClient;
+import model.ConnectionClient;
 
 /**
  *
@@ -126,8 +126,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton1.setText("<1>, <1>"); // NOI18N
-        jButton1.setToolTipText("");
+        jButton1.setToolTipText("<1>, <1>");
         jButton1.setAlignmentY(0.0F);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -141,7 +140,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton2.setText("<1>, <2>");
+        jButton2.setToolTipText("<1>, <2>");
         jButton2.setContentAreaFilled(false);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -153,7 +152,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton3.setText("<1>, <3>");
+        jButton3.setToolTipText("<1>, <3>");
         jButton3.setContentAreaFilled(false);
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -165,7 +164,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton4.setText("<1>, <4>");
+        jButton4.setToolTipText("<1>, <4>");
         jButton4.setContentAreaFilled(false);
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -177,8 +176,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton5.setText("<1>, <5>");
-        jButton5.setToolTipText("");
+        jButton5.setToolTipText("<1>, <5>");
         jButton5.setContentAreaFilled(false);
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +188,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton6.setText("<1>, <6>");
+        jButton6.setToolTipText("<1>, <6>");
         jButton6.setContentAreaFilled(false);
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -202,7 +200,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton7.setText("<1>, <7>");
+        jButton7.setToolTipText("<1>, <7>");
         jButton7.setContentAreaFilled(false);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -214,7 +212,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton8.setText("<1>, <8>");
+        jButton8.setToolTipText("<1>, <8>");
         jButton8.setContentAreaFilled(false);
         jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +224,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton9.setText("<2>, <1>");
+        jButton9.setToolTipText("<2>, <1>");
         jButton9.setContentAreaFilled(false);
         jButton9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -238,7 +236,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton10.setText("<2>, <2>");
+        jButton10.setToolTipText("<2>, <2>");
         jButton10.setContentAreaFilled(false);
         jButton10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -250,7 +248,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton11.setText("<2>, <3>");
+        jButton11.setToolTipText("<2>, <3>");
         jButton11.setContentAreaFilled(false);
         jButton11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -262,7 +260,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton12.setForeground(new java.awt.Color(255, 255, 255));
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton12.setText("<2>, <4>");
+        jButton12.setToolTipText("<2>, <4>");
         jButton12.setContentAreaFilled(false);
         jButton12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -274,7 +272,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton13.setForeground(new java.awt.Color(255, 255, 255));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton13.setText("<2>, <5>");
+        jButton13.setToolTipText("<2>, <5>");
         jButton13.setContentAreaFilled(false);
         jButton13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -286,7 +284,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton14.setForeground(new java.awt.Color(255, 255, 255));
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton14.setText("<2>, <6>");
+        jButton14.setToolTipText("<2>, <6>");
         jButton14.setContentAreaFilled(false);
         jButton14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
@@ -298,7 +296,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton15.setForeground(new java.awt.Color(255, 255, 255));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton15.setText("<2>, <7>");
+        jButton15.setToolTipText("<2>, <7>");
         jButton15.setContentAreaFilled(false);
         jButton15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton15.addActionListener(new java.awt.event.ActionListener() {
@@ -310,7 +308,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton16.setForeground(new java.awt.Color(255, 255, 255));
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton16.setText("<2>, <8>");
+        jButton16.setToolTipText("<2>, <8>");
         jButton16.setContentAreaFilled(false);
         jButton16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -322,7 +320,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton17.setForeground(new java.awt.Color(255, 255, 255));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton17.setText("<3>, <1>");
+        jButton17.setToolTipText("<3>, <1>");
         jButton17.setContentAreaFilled(false);
         jButton17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton17.addActionListener(new java.awt.event.ActionListener() {
@@ -334,7 +332,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton18.setForeground(new java.awt.Color(255, 255, 255));
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton18.setText("<3>, <2>");
+        jButton18.setToolTipText("<3>, <2>");
         jButton18.setContentAreaFilled(false);
         jButton18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton18.addActionListener(new java.awt.event.ActionListener() {
@@ -346,7 +344,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton19.setForeground(new java.awt.Color(255, 255, 255));
         jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton19.setText("<3>, <3>");
+        jButton19.setToolTipText("<3>, <3>");
         jButton19.setContentAreaFilled(false);
         jButton19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton19.addActionListener(new java.awt.event.ActionListener() {
@@ -358,7 +356,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton20.setForeground(new java.awt.Color(255, 255, 255));
         jButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton20.setText("<3>, <4>");
+        jButton20.setToolTipText("<3>, <4>");
         jButton20.setContentAreaFilled(false);
         jButton20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton20.addActionListener(new java.awt.event.ActionListener() {
@@ -370,7 +368,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton21.setForeground(new java.awt.Color(255, 255, 255));
         jButton21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton21.setText("<3>, <5>");
+        jButton21.setToolTipText("<3>, <5>");
         jButton21.setContentAreaFilled(false);
         jButton21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton21.addActionListener(new java.awt.event.ActionListener() {
@@ -382,7 +380,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton22.setForeground(new java.awt.Color(255, 255, 255));
         jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton22.setText("<3>, <6>");
+        jButton22.setToolTipText("<3>, <6>");
         jButton22.setContentAreaFilled(false);
         jButton22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton22.addActionListener(new java.awt.event.ActionListener() {
@@ -394,7 +392,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton23.setForeground(new java.awt.Color(255, 255, 255));
         jButton23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton23.setText("<3>, <7>");
+        jButton23.setToolTipText("<3>, <7>");
         jButton23.setContentAreaFilled(false);
         jButton23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton23.addActionListener(new java.awt.event.ActionListener() {
@@ -406,7 +404,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton24.setForeground(new java.awt.Color(255, 255, 255));
         jButton24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton24.setText("<3>, <8>");
+        jButton24.setToolTipText("<3>, <8>");
         jButton24.setContentAreaFilled(false);
         jButton24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton24.addActionListener(new java.awt.event.ActionListener() {
@@ -418,8 +416,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton25.setForeground(new java.awt.Color(255, 255, 255));
         jButton25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton25.setText("<4>, <1>");
-        jButton25.setToolTipText("");
+        jButton25.setToolTipText("<4>, <1>");
         jButton25.setContentAreaFilled(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton25.addActionListener(new java.awt.event.ActionListener() {
@@ -431,7 +428,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
         jButton26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton26.setText("<4>, <2>");
+        jButton26.setToolTipText("<4>, <2>");
         jButton26.setContentAreaFilled(false);
         jButton26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton26.addActionListener(new java.awt.event.ActionListener() {
@@ -443,7 +440,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton27.setForeground(new java.awt.Color(255, 255, 255));
         jButton27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton27.setText("<4>, <3>");
+        jButton27.setToolTipText("<4>, <3>");
         jButton27.setContentAreaFilled(false);
         jButton27.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton27.addActionListener(new java.awt.event.ActionListener() {
@@ -455,7 +452,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/white.png"))); // NOI18N
-        jButton28.setText("<4>, <4>");
+        jButton28.setToolTipText("<4>, <4>");
         jButton28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -466,7 +463,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton29.setForeground(new java.awt.Color(255, 255, 255));
         jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/black.png"))); // NOI18N
-        jButton29.setText("<4>, <5>");
+        jButton29.setToolTipText("<4>, <5>");
         jButton29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -477,7 +474,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton30.setForeground(new java.awt.Color(255, 255, 255));
         jButton30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton30.setText("<4>, <6>");
+        jButton30.setToolTipText("<4>, <6>");
         jButton30.setContentAreaFilled(false);
         jButton30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton30.addActionListener(new java.awt.event.ActionListener() {
@@ -489,7 +486,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton31.setForeground(new java.awt.Color(255, 255, 255));
         jButton31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton31.setText("<4>, <7>");
+        jButton31.setToolTipText("<4>, <7>");
         jButton31.setContentAreaFilled(false);
         jButton31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton31.addActionListener(new java.awt.event.ActionListener() {
@@ -501,7 +498,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
         jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton32.setText("<4>, <8>");
+        jButton32.setToolTipText("<4>, <8>");
         jButton32.setContentAreaFilled(false);
         jButton32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton32.addActionListener(new java.awt.event.ActionListener() {
@@ -513,7 +510,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
         jButton33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton33.setText("<5>, <1>");
+        jButton33.setToolTipText("<5>, <1>");
         jButton33.setContentAreaFilled(false);
         jButton33.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton33.addActionListener(new java.awt.event.ActionListener() {
@@ -525,7 +522,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton34.setForeground(new java.awt.Color(255, 255, 255));
         jButton34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton34.setText("<5>, <2>");
+        jButton34.setToolTipText("<5>, <2>");
         jButton34.setContentAreaFilled(false);
         jButton34.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton34.addActionListener(new java.awt.event.ActionListener() {
@@ -537,7 +534,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton35.setForeground(new java.awt.Color(255, 255, 255));
         jButton35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton35.setText("<5>, <3>");
+        jButton35.setToolTipText("<5>, <3>");
         jButton35.setContentAreaFilled(false);
         jButton35.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton35.addActionListener(new java.awt.event.ActionListener() {
@@ -549,7 +546,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton36.setForeground(new java.awt.Color(255, 255, 255));
         jButton36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/black.png"))); // NOI18N
-        jButton36.setText("<5>, <4>");
+        jButton36.setToolTipText("<5>, <4>");
         jButton36.setContentAreaFilled(false);
         jButton36.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton36.addActionListener(new java.awt.event.ActionListener() {
@@ -561,7 +558,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton37.setForeground(new java.awt.Color(255, 255, 255));
         jButton37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/white.png"))); // NOI18N
-        jButton37.setText("<5>, <5>");
+        jButton37.setToolTipText("<5>, <5>");
         jButton37.setContentAreaFilled(false);
         jButton37.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton37.addActionListener(new java.awt.event.ActionListener() {
@@ -573,7 +570,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton38.setForeground(new java.awt.Color(255, 255, 255));
         jButton38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton38.setText("<5>, <6>");
+        jButton38.setToolTipText("<5>, <6>");
         jButton38.setContentAreaFilled(false);
         jButton38.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton38.addActionListener(new java.awt.event.ActionListener() {
@@ -585,7 +582,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton39.setForeground(new java.awt.Color(255, 255, 255));
         jButton39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton39.setText("<5>, <7>");
+        jButton39.setToolTipText("<5>, <7>");
         jButton39.setContentAreaFilled(false);
         jButton39.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton39.addActionListener(new java.awt.event.ActionListener() {
@@ -597,7 +594,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton40.setForeground(new java.awt.Color(255, 255, 255));
         jButton40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton40.setText("<5>, <8>");
+        jButton40.setToolTipText("<5>, <8>");
         jButton40.setContentAreaFilled(false);
         jButton40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton40.addActionListener(new java.awt.event.ActionListener() {
@@ -609,7 +606,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton41.setForeground(new java.awt.Color(255, 255, 255));
         jButton41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton41.setText("<6>, <1>");
+        jButton41.setToolTipText("<6>, <1>");
         jButton41.setContentAreaFilled(false);
         jButton41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton41.addActionListener(new java.awt.event.ActionListener() {
@@ -621,7 +618,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton42.setForeground(new java.awt.Color(255, 255, 255));
         jButton42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton42.setText("<6>, <2>");
+        jButton42.setToolTipText("<6>, <2>");
         jButton42.setContentAreaFilled(false);
         jButton42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton42.addActionListener(new java.awt.event.ActionListener() {
@@ -633,7 +630,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton43.setForeground(new java.awt.Color(255, 255, 255));
         jButton43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton43.setText("<6>, <3>");
+        jButton43.setToolTipText("<6>, <3>");
         jButton43.setContentAreaFilled(false);
         jButton43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton43.addActionListener(new java.awt.event.ActionListener() {
@@ -645,7 +642,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton44.setForeground(new java.awt.Color(255, 255, 255));
         jButton44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton44.setText("<6>, <4>");
+        jButton44.setToolTipText("<6>, <4>");
         jButton44.setContentAreaFilled(false);
         jButton44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton44.addActionListener(new java.awt.event.ActionListener() {
@@ -657,7 +654,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton45.setForeground(new java.awt.Color(255, 255, 255));
         jButton45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton45.setText("<6>, <5>");
+        jButton45.setToolTipText("<6>, <5>");
         jButton45.setContentAreaFilled(false);
         jButton45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton45.addActionListener(new java.awt.event.ActionListener() {
@@ -669,7 +666,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton46.setForeground(new java.awt.Color(255, 255, 255));
         jButton46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton46.setText("<6>, <6>");
+        jButton46.setToolTipText("<6>, <6>");
         jButton46.setContentAreaFilled(false);
         jButton46.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton46.addActionListener(new java.awt.event.ActionListener() {
@@ -681,7 +678,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton47.setForeground(new java.awt.Color(255, 255, 255));
         jButton47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton47.setText("<6>, <7>");
+        jButton47.setToolTipText("<6>, <7>");
         jButton47.setContentAreaFilled(false);
         jButton47.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton47.addActionListener(new java.awt.event.ActionListener() {
@@ -693,7 +690,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton48.setForeground(new java.awt.Color(255, 255, 255));
         jButton48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton48.setText("<6>, <8>");
+        jButton48.setToolTipText("<6>, <8>");
         jButton48.setContentAreaFilled(false);
         jButton48.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton48.addActionListener(new java.awt.event.ActionListener() {
@@ -714,10 +711,11 @@ public class Game extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton49);
+        jButton49.getAccessibleContext().setAccessibleDescription("<6>, <0>");
 
         jButton50.setForeground(new java.awt.Color(255, 255, 255));
         jButton50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton50.setText("<7>, <2>");
+        jButton50.setToolTipText("<7>, <2>");
         jButton50.setContentAreaFilled(false);
         jButton50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton50.addActionListener(new java.awt.event.ActionListener() {
@@ -729,7 +727,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton51.setForeground(new java.awt.Color(255, 255, 255));
         jButton51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton51.setText("<7>, <3>");
+        jButton51.setToolTipText("<7>, <3>");
         jButton51.setContentAreaFilled(false);
         jButton51.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton51.addActionListener(new java.awt.event.ActionListener() {
@@ -741,7 +739,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton52.setForeground(new java.awt.Color(255, 255, 255));
         jButton52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton52.setText("<7>, <4>");
+        jButton52.setToolTipText("<7>, <4>");
         jButton52.setContentAreaFilled(false);
         jButton52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton52.addActionListener(new java.awt.event.ActionListener() {
@@ -753,7 +751,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton53.setForeground(new java.awt.Color(255, 255, 255));
         jButton53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton53.setText("<7>, <5>");
+        jButton53.setToolTipText("<7>, <5>");
         jButton53.setContentAreaFilled(false);
         jButton53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton53.addActionListener(new java.awt.event.ActionListener() {
@@ -765,7 +763,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton54.setForeground(new java.awt.Color(255, 255, 255));
         jButton54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton54.setText("<7>, <6>");
+        jButton54.setToolTipText("<7>, <6>");
         jButton54.setContentAreaFilled(false);
         jButton54.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton54.addActionListener(new java.awt.event.ActionListener() {
@@ -777,7 +775,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton55.setForeground(new java.awt.Color(255, 255, 255));
         jButton55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton55.setText("<7>, <7>");
+        jButton55.setToolTipText("<7>, <7>");
         jButton55.setContentAreaFilled(false);
         jButton55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton55.addActionListener(new java.awt.event.ActionListener() {
@@ -789,7 +787,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton56.setForeground(new java.awt.Color(255, 255, 255));
         jButton56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton56.setText("<7>, <8>");
+        jButton56.setToolTipText("<7>, <8>");
         jButton56.setContentAreaFilled(false);
         jButton56.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton56.addActionListener(new java.awt.event.ActionListener() {
@@ -801,7 +799,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton57.setForeground(new java.awt.Color(255, 255, 255));
         jButton57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton57.setText("<8>, <1>");
+        jButton57.setToolTipText("<8>, <1>");
         jButton57.setContentAreaFilled(false);
         jButton57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton57.addActionListener(new java.awt.event.ActionListener() {
@@ -813,7 +811,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton58.setForeground(new java.awt.Color(255, 255, 255));
         jButton58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton58.setText("<8>, <2>");
+        jButton58.setToolTipText("<8>, <2>");
         jButton58.setContentAreaFilled(false);
         jButton58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton58.addActionListener(new java.awt.event.ActionListener() {
@@ -825,8 +823,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton59.setForeground(new java.awt.Color(255, 255, 255));
         jButton59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton59.setText("<8>, <3>");
-        jButton59.setToolTipText("");
+        jButton59.setToolTipText("<8>, <3>");
         jButton59.setContentAreaFilled(false);
         jButton59.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton59.addActionListener(new java.awt.event.ActionListener() {
@@ -838,7 +835,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton60.setForeground(new java.awt.Color(255, 255, 255));
         jButton60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton60.setText("<8>, <4>");
+        jButton60.setToolTipText("<8>, <4>");
         jButton60.setContentAreaFilled(false);
         jButton60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton60.addActionListener(new java.awt.event.ActionListener() {
@@ -850,7 +847,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton61.setForeground(new java.awt.Color(255, 255, 255));
         jButton61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton61.setText("<8>, <5>");
+        jButton61.setToolTipText("<8>, <5>");
         jButton61.setContentAreaFilled(false);
         jButton61.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton61.addActionListener(new java.awt.event.ActionListener() {
@@ -862,7 +859,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton62.setForeground(new java.awt.Color(255, 255, 255));
         jButton62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton62.setText("<8>, <6>");
+        jButton62.setToolTipText("<8>, <6>");
         jButton62.setContentAreaFilled(false);
         jButton62.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton62.addActionListener(new java.awt.event.ActionListener() {
@@ -874,7 +871,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton63.setForeground(new java.awt.Color(255, 255, 255));
         jButton63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton63.setText("<8>, <7>");
+        jButton63.setToolTipText("<8>, <7>");
         jButton63.setContentAreaFilled(false);
         jButton63.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton63.addActionListener(new java.awt.event.ActionListener() {
@@ -886,7 +883,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton64.setForeground(new java.awt.Color(255, 255, 255));
         jButton64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton64.setText("<8>, <8>");
+        jButton64.setToolTipText("<8>, <8>");
         jButton64.setContentAreaFilled(false);
         jButton64.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton64.addActionListener(new java.awt.event.ActionListener() {
@@ -1023,16 +1020,16 @@ public class Game extends javax.swing.JFrame {
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton67))
+                .addContainerGap(9, Short.MAX_VALUE)
+                .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton68))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jButton67)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton68)))
                 .addContainerGap(11, Short.MAX_VALUE))
         );
 

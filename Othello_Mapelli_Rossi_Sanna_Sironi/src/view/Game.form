@@ -85,18 +85,17 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton67" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <EmptySpace pref="9" max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jPanel2" max="32767" attributes="0"/>
-                          <Component id="jPanel1" min="-2" pref="421" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jPanel2" max="32767" attributes="0"/>
+                      <Component id="jPanel1" min="-2" pref="421" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jButton67" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButton68" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="jButton68" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="11" max="32767" attributes="0"/>
               </Group>
@@ -136,8 +135,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;1&gt;" noResource="true"/>
-                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;1&gt;"/>
                 <Property name="alignmentY" type="float" value="0.0"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -160,7 +158,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -176,7 +174,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -192,7 +190,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -208,8 +206,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;5&gt;"/>
-                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -225,7 +222,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -241,7 +238,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -257,7 +254,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;1&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;1&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -273,7 +270,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;1&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;1&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -289,7 +286,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -305,7 +302,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -321,7 +318,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -337,7 +334,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -353,7 +350,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -369,7 +366,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -385,7 +382,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;2&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;2&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -401,7 +398,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;1&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;1&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -417,7 +414,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -433,7 +430,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -449,7 +446,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -465,7 +462,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -481,7 +478,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -497,7 +494,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -513,7 +510,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;3&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;3&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -529,8 +526,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;1&gt;"/>
-                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;1&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -546,7 +542,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -562,7 +558,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -578,7 +574,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/white.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;4&gt;"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
               <Events>
@@ -593,7 +589,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/black.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;5&gt;"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
               <Events>
@@ -608,7 +604,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -624,7 +620,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -640,7 +636,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;4&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;4&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -656,7 +652,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;1&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;1&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -672,7 +668,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -688,7 +684,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -704,7 +700,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/black.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -720,7 +716,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/white.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -736,7 +732,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -752,7 +748,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -768,7 +764,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;5&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;5&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -784,7 +780,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;1&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;1&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -800,7 +796,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -816,7 +812,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -832,7 +828,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -848,7 +844,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -864,7 +860,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -880,7 +876,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -896,7 +892,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;6&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;6&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -916,6 +912,9 @@
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value="&lt;6&gt;, &lt;0&gt;"/>
+              </AccessibilityProperties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton49ActionPerformed"/>
               </Events>
@@ -928,7 +927,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -944,7 +943,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;3&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -960,7 +959,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -976,7 +975,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -992,7 +991,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1008,7 +1007,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1024,7 +1023,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;7&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;7&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1040,7 +1039,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;1&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;1&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1056,7 +1055,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;2&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;2&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1072,8 +1071,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;3&gt;"/>
-                <Property name="toolTipText" type="java.lang.String" value=""/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;3&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1089,7 +1087,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;4&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;4&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1105,7 +1103,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;5&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;5&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1121,7 +1119,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;6&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;6&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1137,7 +1135,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;7&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;7&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -1153,7 +1151,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/view/images/empty.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&lt;8&gt;, &lt;8&gt;"/>
+                <Property name="toolTipText" type="java.lang.String" value="&lt;8&gt;, &lt;8&gt;"/>
                 <Property name="contentAreaFilled" type="boolean" value="false"/>
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
