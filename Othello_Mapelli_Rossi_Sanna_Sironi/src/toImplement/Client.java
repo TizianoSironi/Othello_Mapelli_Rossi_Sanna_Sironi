@@ -1,6 +1,7 @@
 
 package toImplement;
 
+import view.Game;
 import model.ClasseModel;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -62,7 +63,7 @@ public class Client {
                         do{
                             
                             System.out.println("Inserisci le coordinate della prossima mossa");
-                            String buttonPushed  Game.getButtonPushed();
+                            //String buttonPushed;  Game.getButtonPushed();
                             serverOutput.println("place: <"+cordX+">, <"+cordY+">;");
                             messaggioServer=serverInput.readLine();
                             

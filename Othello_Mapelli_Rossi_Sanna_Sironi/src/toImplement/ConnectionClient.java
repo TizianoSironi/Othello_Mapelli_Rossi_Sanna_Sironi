@@ -1,5 +1,6 @@
 package toImplement;
 
+import view.Game;
 import java.net.Socket;
 import java.util.Scanner;
 
