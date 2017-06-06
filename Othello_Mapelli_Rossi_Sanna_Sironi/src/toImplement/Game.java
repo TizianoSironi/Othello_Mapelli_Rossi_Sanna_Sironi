@@ -6,7 +6,6 @@
 package toImplement;
 import model.ClasseModel;
 import java.io.IOException;
-import javax.swing.JButton;
 import model.Server;
 
 /**
@@ -19,76 +18,9 @@ public class Game extends javax.swing.JFrame {
     int cordX;
     int cordY;
     public Game() {
-        initComponents();
-        bottoni = new JButton [8][8];
-        bottoni [0][0] = jButton1;
-        bottoni [0][1] = jButton2;
-        bottoni [0][2] = jButton3;
-        bottoni [0][3] = jButton4;
-        bottoni [0][4] = jButton5;
-        bottoni [0][5] = jButton6;
-        bottoni [0][6] = jButton7;
-        bottoni [0][7] = jButton8;
-        bottoni [1][0] = jButton9;
-        bottoni [1][1] = jButton10;
-        bottoni [1][2] = jButton11;
-        bottoni [1][3] = jButton12;
-        bottoni [1][4] = jButton13;
-        bottoni [1][5] = jButton14;
-        bottoni [1][6] = jButton15;
-        bottoni [1][7] = jButton16;
-        bottoni [2][0] = jButton17;
-        bottoni [2][1] = jButton18;
-        bottoni [2][2] = jButton19;
-        bottoni [2][3] = jButton20;
-        bottoni [2][4] = jButton21;
-        bottoni [2][5] = jButton22;
-        bottoni [2][6] = jButton23;
-        bottoni [2][7] = jButton24;
-        bottoni [3][0] = jButton25;
-        bottoni [3][1] = jButton26;
-        bottoni [3][2] = jButton27;
-        bottoni [3][3] = jButton28;
-        bottoni [3][4] = jButton29;
-        bottoni [3][5] = jButton30;
-        bottoni [3][6] = jButton31;
-        bottoni [3][7] = jButton32;
-        bottoni [4][0] = jButton33;
-        bottoni [4][1] = jButton34;
-        bottoni [4][2] = jButton35;
-        bottoni [4][3] = jButton36;
-        bottoni [4][4] = jButton37;
-        bottoni [4][5] = jButton38;
-        bottoni [4][6] = jButton39;
-        bottoni [4][7] = jButton40;
-        bottoni [5][0] = jButton41;
-        bottoni [5][1] = jButton42;
-        bottoni [5][2] = jButton43;
-        bottoni [5][3] = jButton44;
-        bottoni [5][4] = jButton45;
-        bottoni [5][5] = jButton46;
-        bottoni [5][6] = jButton47;
-        bottoni [5][7] = jButton48;
-        bottoni [6][0] = jButton49;
-        bottoni [6][1] = jButton50;
-        bottoni [6][2] = jButton51;
-        bottoni [6][3] = jButton52;
-        bottoni [6][4] = jButton53;
-        bottoni [6][5] = jButton54;
-        bottoni [6][6] = jButton55;
-        bottoni [6][7] = jButton56;
-        bottoni [7][0] = jButton57;
-        bottoni [7][1] = jButton58;
-        bottoni [7][2] = jButton59;
-        bottoni [7][3] = jButton60;
-        bottoni [7][4] = jButton61;
-        bottoni [7][5] = jButton62;
-        bottoni [7][6] = jButton63;
-        bottoni [7][7] = jButton64; 
-        
+        initComponents();       
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -488,6 +420,11 @@ public class Game extends javax.swing.JFrame {
         jButton25.setToolTipText("");
         jButton25.setContentAreaFilled(false);
         jButton25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton25);
 
         jButton26.setForeground(new java.awt.Color(255, 255, 255));
@@ -495,6 +432,11 @@ public class Game extends javax.swing.JFrame {
         jButton26.setText("<4>, <2>");
         jButton26.setContentAreaFilled(false);
         jButton26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton26);
 
         jButton27.setForeground(new java.awt.Color(255, 255, 255));
@@ -502,18 +444,33 @@ public class Game extends javax.swing.JFrame {
         jButton27.setText("<4>, <3>");
         jButton27.setContentAreaFilled(false);
         jButton27.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton27);
 
         jButton28.setForeground(new java.awt.Color(255, 255, 255));
         jButton28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/white.png"))); // NOI18N
         jButton28.setText("<4>, <4>");
         jButton28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton28);
 
         jButton29.setForeground(new java.awt.Color(255, 255, 255));
         jButton29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/black.png"))); // NOI18N
         jButton29.setText("<4>, <5>");
         jButton29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton29);
 
         jButton30.setForeground(new java.awt.Color(255, 255, 255));
@@ -521,6 +478,11 @@ public class Game extends javax.swing.JFrame {
         jButton30.setText("<4>, <6>");
         jButton30.setContentAreaFilled(false);
         jButton30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton30);
 
         jButton31.setForeground(new java.awt.Color(255, 255, 255));
@@ -528,6 +490,11 @@ public class Game extends javax.swing.JFrame {
         jButton31.setText("<4>, <7>");
         jButton31.setContentAreaFilled(false);
         jButton31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton31);
 
         jButton32.setForeground(new java.awt.Color(255, 255, 255));
@@ -535,6 +502,11 @@ public class Game extends javax.swing.JFrame {
         jButton32.setText("<4>, <8>");
         jButton32.setContentAreaFilled(false);
         jButton32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton32);
 
         jButton33.setForeground(new java.awt.Color(255, 255, 255));
@@ -542,6 +514,11 @@ public class Game extends javax.swing.JFrame {
         jButton33.setText("<5>, <1>");
         jButton33.setContentAreaFilled(false);
         jButton33.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton33);
 
         jButton34.setForeground(new java.awt.Color(255, 255, 255));
@@ -549,6 +526,11 @@ public class Game extends javax.swing.JFrame {
         jButton34.setText("<5>, <2>");
         jButton34.setContentAreaFilled(false);
         jButton34.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton34);
 
         jButton35.setForeground(new java.awt.Color(255, 255, 255));
@@ -556,6 +538,11 @@ public class Game extends javax.swing.JFrame {
         jButton35.setText("<5>, <3>");
         jButton35.setContentAreaFilled(false);
         jButton35.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton35);
 
         jButton36.setForeground(new java.awt.Color(255, 255, 255));
@@ -563,6 +550,11 @@ public class Game extends javax.swing.JFrame {
         jButton36.setText("<5>, <4>");
         jButton36.setContentAreaFilled(false);
         jButton36.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton36);
 
         jButton37.setForeground(new java.awt.Color(255, 255, 255));
@@ -570,6 +562,11 @@ public class Game extends javax.swing.JFrame {
         jButton37.setText("<5>, <5>");
         jButton37.setContentAreaFilled(false);
         jButton37.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton37.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton37ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton37);
 
         jButton38.setForeground(new java.awt.Color(255, 255, 255));
@@ -577,6 +574,11 @@ public class Game extends javax.swing.JFrame {
         jButton38.setText("<5>, <6>");
         jButton38.setContentAreaFilled(false);
         jButton38.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton38);
 
         jButton39.setForeground(new java.awt.Color(255, 255, 255));
@@ -584,6 +586,11 @@ public class Game extends javax.swing.JFrame {
         jButton39.setText("<5>, <7>");
         jButton39.setContentAreaFilled(false);
         jButton39.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton39);
 
         jButton40.setForeground(new java.awt.Color(255, 255, 255));
@@ -591,6 +598,11 @@ public class Game extends javax.swing.JFrame {
         jButton40.setText("<5>, <8>");
         jButton40.setContentAreaFilled(false);
         jButton40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton40.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton40ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton40);
 
         jButton41.setForeground(new java.awt.Color(255, 255, 255));
@@ -598,6 +610,11 @@ public class Game extends javax.swing.JFrame {
         jButton41.setText("<6>, <1>");
         jButton41.setContentAreaFilled(false);
         jButton41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton41.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton41ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton41);
 
         jButton42.setForeground(new java.awt.Color(255, 255, 255));
@@ -605,6 +622,11 @@ public class Game extends javax.swing.JFrame {
         jButton42.setText("<6>, <2>");
         jButton42.setContentAreaFilled(false);
         jButton42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton42.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton42ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton42);
 
         jButton43.setForeground(new java.awt.Color(255, 255, 255));
@@ -612,6 +634,11 @@ public class Game extends javax.swing.JFrame {
         jButton43.setText("<6>, <3>");
         jButton43.setContentAreaFilled(false);
         jButton43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton43.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton43ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton43);
 
         jButton44.setForeground(new java.awt.Color(255, 255, 255));
@@ -619,6 +646,11 @@ public class Game extends javax.swing.JFrame {
         jButton44.setText("<6>, <4>");
         jButton44.setContentAreaFilled(false);
         jButton44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton44.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton44ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton44);
 
         jButton45.setForeground(new java.awt.Color(255, 255, 255));
@@ -626,6 +658,11 @@ public class Game extends javax.swing.JFrame {
         jButton45.setText("<6>, <5>");
         jButton45.setContentAreaFilled(false);
         jButton45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton45.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton45ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton45);
 
         jButton46.setForeground(new java.awt.Color(255, 255, 255));
@@ -645,6 +682,11 @@ public class Game extends javax.swing.JFrame {
         jButton47.setText("<6>, <7>");
         jButton47.setContentAreaFilled(false);
         jButton47.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton47.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton47ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton47);
 
         jButton48.setForeground(new java.awt.Color(255, 255, 255));
@@ -652,6 +694,11 @@ public class Game extends javax.swing.JFrame {
         jButton48.setText("<6>, <8>");
         jButton48.setContentAreaFilled(false);
         jButton48.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton48.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton48ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton48);
 
         jButton49.setForeground(new java.awt.Color(255, 255, 255));
@@ -659,6 +706,11 @@ public class Game extends javax.swing.JFrame {
         jButton49.setToolTipText("<7>, <1>");
         jButton49.setContentAreaFilled(false);
         jButton49.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton49.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton49ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton49);
 
         jButton50.setForeground(new java.awt.Color(255, 255, 255));
@@ -666,6 +718,11 @@ public class Game extends javax.swing.JFrame {
         jButton50.setText("<7>, <2>");
         jButton50.setContentAreaFilled(false);
         jButton50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton50.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton50ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton50);
 
         jButton51.setForeground(new java.awt.Color(255, 255, 255));
@@ -673,6 +730,11 @@ public class Game extends javax.swing.JFrame {
         jButton51.setText("<7>, <3>");
         jButton51.setContentAreaFilled(false);
         jButton51.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton51);
 
         jButton52.setForeground(new java.awt.Color(255, 255, 255));
@@ -680,6 +742,11 @@ public class Game extends javax.swing.JFrame {
         jButton52.setText("<7>, <4>");
         jButton52.setContentAreaFilled(false);
         jButton52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton52);
 
         jButton53.setForeground(new java.awt.Color(255, 255, 255));
@@ -687,6 +754,11 @@ public class Game extends javax.swing.JFrame {
         jButton53.setText("<7>, <5>");
         jButton53.setContentAreaFilled(false);
         jButton53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton53);
 
         jButton54.setForeground(new java.awt.Color(255, 255, 255));
@@ -694,6 +766,11 @@ public class Game extends javax.swing.JFrame {
         jButton54.setText("<7>, <6>");
         jButton54.setContentAreaFilled(false);
         jButton54.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton54);
 
         jButton55.setForeground(new java.awt.Color(255, 255, 255));
@@ -701,6 +778,11 @@ public class Game extends javax.swing.JFrame {
         jButton55.setText("<7>, <7>");
         jButton55.setContentAreaFilled(false);
         jButton55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton55);
 
         jButton56.setForeground(new java.awt.Color(255, 255, 255));
@@ -708,6 +790,11 @@ public class Game extends javax.swing.JFrame {
         jButton56.setText("<7>, <8>");
         jButton56.setContentAreaFilled(false);
         jButton56.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton56);
 
         jButton57.setForeground(new java.awt.Color(255, 255, 255));
@@ -715,6 +802,11 @@ public class Game extends javax.swing.JFrame {
         jButton57.setText("<8>, <1>");
         jButton57.setContentAreaFilled(false);
         jButton57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton57);
 
         jButton58.setForeground(new java.awt.Color(255, 255, 255));
@@ -722,6 +814,11 @@ public class Game extends javax.swing.JFrame {
         jButton58.setText("<8>, <2>");
         jButton58.setContentAreaFilled(false);
         jButton58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton58);
 
         jButton59.setForeground(new java.awt.Color(255, 255, 255));
@@ -730,6 +827,11 @@ public class Game extends javax.swing.JFrame {
         jButton59.setToolTipText("");
         jButton59.setContentAreaFilled(false);
         jButton59.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton59);
 
         jButton60.setForeground(new java.awt.Color(255, 255, 255));
@@ -737,6 +839,11 @@ public class Game extends javax.swing.JFrame {
         jButton60.setText("<8>, <4>");
         jButton60.setContentAreaFilled(false);
         jButton60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton60);
 
         jButton61.setForeground(new java.awt.Color(255, 255, 255));
@@ -744,6 +851,11 @@ public class Game extends javax.swing.JFrame {
         jButton61.setText("<8>, <5>");
         jButton61.setContentAreaFilled(false);
         jButton61.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton61ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton61);
 
         jButton62.setForeground(new java.awt.Color(255, 255, 255));
@@ -751,6 +863,11 @@ public class Game extends javax.swing.JFrame {
         jButton62.setText("<8>, <6>");
         jButton62.setContentAreaFilled(false);
         jButton62.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton62ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton62);
 
         jButton63.setForeground(new java.awt.Color(255, 255, 255));
@@ -758,6 +875,11 @@ public class Game extends javax.swing.JFrame {
         jButton63.setText("<8>, <7>");
         jButton63.setContentAreaFilled(false);
         jButton63.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton63.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton63ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton63);
 
         jButton64.setForeground(new java.awt.Color(255, 255, 255));
@@ -765,6 +887,11 @@ public class Game extends javax.swing.JFrame {
         jButton64.setText("<8>, <8>");
         jButton64.setContentAreaFilled(false);
         jButton64.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton64.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton64ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton64);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -925,8 +1052,8 @@ public class Game extends javax.swing.JFrame {
     
     
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
-        int x = 6;
-        int y = 6;
+        int x = 5;
+        int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
         cordX=x;
         cordY=y;
@@ -943,8 +1070,8 @@ public class Game extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        int x = 3;
-        int y = 7;
+        int x = 2;
+        int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
         cordX=x;
         cordY=y;
@@ -1024,8 +1151,7 @@ public class Game extends javax.swing.JFrame {
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
         System.out.println("versione server");
-        Server s = new Server();
-        s.start();
+        new Server();
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -1118,6 +1244,240 @@ public class Game extends javax.swing.JFrame {
         System.out.println("pos<" + x + "><" + y + ">");
         
     }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        int x = 3;
+        int y = 0;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton25ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        int x = 3;
+        int y = 1;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        int x = 3;
+        int y = 2;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        int x = 3;
+        int y = 3;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        int x = 3;
+        int y = 4;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        int x = 3;
+        int y = 5;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton30ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        int x = 3;
+        int y = 6;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        int x = 3;
+        int y = 7;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        int x = 4;
+        int y = 0;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        int x = 4;
+        int y = 1;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton34ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        int x = 4;
+        int y = 2;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        int x = 4;
+        int y = 3;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton36ActionPerformed
+
+    private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
+        int x = 4;
+        int y = 4;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton37ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        int x = 4;
+        int y = 5;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        int x = 4;
+        int y = 6;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
+        int x = 4;
+        int y = 7;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton40ActionPerformed
+
+    private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
+        int x = 5;
+        int y = 0;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton41ActionPerformed
+
+    private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
+        int x = 5;
+        int y = 1;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton42ActionPerformed
+
+    private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
+        int x = 5;
+        int y = 2;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton43ActionPerformed
+
+    private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
+        int x = 5;
+        int y = 3;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton44ActionPerformed
+
+    private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
+        int x = 5;
+        int y = 4;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton45ActionPerformed
+
+    private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
+        int x = 5;
+        int y = 6;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton47ActionPerformed
+
+    private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+        int x = 5;
+        int y = 7;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton48ActionPerformed
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        int x = 6;
+        int y = 0;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
+        int x = 6;
+        int y = 1;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton50ActionPerformed
+
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
+        int x = 6;
+        int y = 2;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton51ActionPerformed
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
+        int x = 6;
+        int y = 3;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton52ActionPerformed
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
+        int x = 6;
+        int y = 4;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton53ActionPerformed
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        int x = 6;
+        int y = 5;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton54ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        int x = 6;
+        int y = 6;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        int x = 6;
+        int y = 7;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+        int x = 7;
+        int y = 0;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        int x = 7;
+        int y = 1;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        int x = 7;
+        int y = 2;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton59ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        int x = 7;
+        int y = 3;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+        int x = 7;
+        int y = 4;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton61ActionPerformed
+
+    private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
+        int x = 7;
+        int y = 5;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton62ActionPerformed
+
+    private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
+        int x = 7;
+        int y = 6;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton63ActionPerformed
+
+    private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
+        int x = 7;
+        int y = 7;
+        System.out.println("pos<" + x + "><" + y + ">");
+    }//GEN-LAST:event_jButton64ActionPerformed
 
     public String getButtonPushed(){
         while (!premuto){
