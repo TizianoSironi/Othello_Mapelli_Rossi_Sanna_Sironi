@@ -27,50 +27,7 @@ public class Client {
             
             BufferedReader serverInput; 
             PrintStream serverOutput;
-            try {
-                serverInput = new BufferedReader (new InputStreamReader(server.getInputStream()));
-                serverOutput = new PrintStream(server.getOutputStream());
-                String messaggioServer;
+            
                 
-                do{
-                    messaggioServer=serverInput.readLine();
-                    if (messaggioServer.startsWith("start: ")){
-                        idClient=messaggioServer.substring(messaggioServer.length()-3, messaggioServer.length()-2);
-                        System.out.println("Connesso al server. Sono il giocatore "+idClient);
-                    }
-                } while (!(idClient.equals("B")||idClient.equals("N")));
-                
-                do{
-                    messaggioServer=serverInput.readLine();
-                    System.out.println("ho letto");
-                    System.out.println(messaggioServer);
-                    if(messaggioServer.equals("round: <"+idClient+">;")){    
-                        do{
-                            System.out.println("Inserisci le coordinate della prossima mossa");
-                            int cordX = sc.nextInt();
-                            int cordY = sc.nextInt();
-                            serverOutput.println("place: <"+cordX+">, <"+cordY+">;");
-                            messaggioServer=serverInput.readLine();
-                            System.out.println(messaggioServer.startsWith("update: ")+" è il mio turno");
-                        }while (!messaggioServer.startsWith("update: "));
-                            //Bisogna estrarre le coordinate da update e stampare la mappa
-                    } else{
-                        do{
-                           System.out.println("Non è il mio turno.. aspetto");
-                           messaggioServer=serverInput.readLine();
-                           int cordX = Integer.parseInt(messaggioServer.substring(14, 15));
-                           int cordY = Integer.parseInt(messaggioServer.substring(19, 20));
-                           System.out.println(cordX);
-                           System.out.println(cordY);
-                           System.out.println (messaggioServer.substring(9,10));
-                           //Bisogna stampare la mappa ed aggiornarla con le coordinate
-                           System.out.println(messaggioServer.startsWith("update: ")+" non è il mio turno");
-                        }while (messaggioServer.startsWith("update: ")==false);
-                    }
-                }while (true); //Controllare se la partita è ancora aperta
-        } catch (Exception e) {
-            System.err.println(e);
-            e.printStackTrace();
-        }
     }   
 }

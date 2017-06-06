@@ -6,6 +6,7 @@
 package toImplement;
 import model.ClasseModel;
 import java.io.IOException;
+import javax.swing.JButton;
 import model.Server;
 
 /**
@@ -13,10 +14,79 @@ import model.Server;
  * @author sironi.tiziano
  */
 public class Game extends javax.swing.JFrame {
+    public static JButton bottoni [][];
+    
     public Game() {
-        initComponents();       
+        initComponents();
+        bottoni = new JButton [8][8];
+        bottoni [0][0] = jButton1;
+        bottoni [0][1] = jButton2;
+        bottoni [0][2] = jButton3;
+        bottoni [0][3] = jButton4;
+        bottoni [0][4] = jButton5;
+        bottoni [0][5] = jButton6;
+        bottoni [0][6] = jButton7;
+        bottoni [0][7] = jButton8;
+        bottoni [1][0] = jButton9;
+        bottoni [1][1] = jButton10;
+        bottoni [1][2] = jButton11;
+        bottoni [1][3] = jButton12;
+        bottoni [1][4] = jButton13;
+        bottoni [1][5] = jButton14;
+        bottoni [1][6] = jButton15;
+        bottoni [1][7] = jButton16;
+        bottoni [2][0] = jButton17;
+        bottoni [2][1] = jButton18;
+        bottoni [2][2] = jButton19;
+        bottoni [2][3] = jButton20;
+        bottoni [2][4] = jButton21;
+        bottoni [2][5] = jButton22;
+        bottoni [2][6] = jButton23;
+        bottoni [2][7] = jButton24;
+        bottoni [3][0] = jButton25;
+        bottoni [3][1] = jButton26;
+        bottoni [3][2] = jButton27;
+        bottoni [3][3] = jButton28;
+        bottoni [3][4] = jButton29;
+        bottoni [3][5] = jButton30;
+        bottoni [3][6] = jButton31;
+        bottoni [3][7] = jButton32;
+        bottoni [4][0] = jButton33;
+        bottoni [4][1] = jButton34;
+        bottoni [4][2] = jButton35;
+        bottoni [4][3] = jButton36;
+        bottoni [4][4] = jButton37;
+        bottoni [4][5] = jButton38;
+        bottoni [4][6] = jButton39;
+        bottoni [4][7] = jButton40;
+        bottoni [5][0] = jButton41;
+        bottoni [5][1] = jButton42;
+        bottoni [5][2] = jButton43;
+        bottoni [5][3] = jButton44;
+        bottoni [5][4] = jButton45;
+        bottoni [5][5] = jButton46;
+        bottoni [5][6] = jButton47;
+        bottoni [5][7] = jButton48;
+        bottoni [6][0] = jButton49;
+        bottoni [6][1] = jButton50;
+        bottoni [6][2] = jButton51;
+        bottoni [6][3] = jButton52;
+        bottoni [6][4] = jButton53;
+        bottoni [6][5] = jButton54;
+        bottoni [6][6] = jButton55;
+        bottoni [6][7] = jButton56;
+        bottoni [7][0] = jButton57;
+        bottoni [7][1] = jButton58;
+        bottoni [7][2] = jButton59;
+        bottoni [7][3] = jButton60;
+        bottoni [7][4] = jButton61;
+        bottoni [7][5] = jButton62;
+        bottoni [7][6] = jButton63;
+        bottoni [7][7] = jButton64; 
+        
     }
 
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -924,7 +994,8 @@ public class Game extends javax.swing.JFrame {
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
         System.out.println("versione server");
-        new Server();
+        Server s = new Server();
+        s.start();
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed

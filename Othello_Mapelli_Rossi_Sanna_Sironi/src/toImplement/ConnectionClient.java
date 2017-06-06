@@ -23,7 +23,7 @@ public class ConnectionClient {
                 System.out.println("creazione socket");
                 Socket s = new Socket(ip,port);
                 System.out.println("socket creata");
-                new gameStarted(s,ip,port);
+                new Client(s,ip,port);
             }
             catch(Exception ex){ System.out.println("ECCEZIONE socket inizio connessione \n " + ex); }
         }
