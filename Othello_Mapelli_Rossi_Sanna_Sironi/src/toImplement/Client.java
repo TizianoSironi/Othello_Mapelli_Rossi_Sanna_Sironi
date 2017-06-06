@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.net.Socket;
-import static model.Client.server;
+
 import model.Scacchiera;
 /**
  *
@@ -17,11 +17,11 @@ import model.Scacchiera;
 public class Client {
      private PrintStream serverOutput; //l'oggetto per scrivere sulla socket
      private BufferedReader serverInput;// l'oggetto per leggere dalla socekt
-     private String idClient;
+     private String idClient; 
      private Scacchiera campo;
      int cordX;
      int cordY;
-     Game g;
+     Game Game;
     /**
      * costruttore per stampare le informazioni della connessione e salvare quest'ultime nella classe del model.
      * @param s Socket della connessione stabilita
@@ -34,7 +34,8 @@ public class Client {
         ClasseModel.ip = ip;
         ClasseModel.port = port;
         System.out.println("INFORMAZIONI SULLA CONNESSIONE \nIP Address: " + ip + "\nPort Number: " + port + "\nSocket " + s);
-     
+        Game = g;
+        startGame();
     }
 
     
@@ -43,8 +44,8 @@ public class Client {
      */
     private void startGame(){
         try {
-                serverInput = new BufferedReader (new InputStreamReader(server.getInputStream()));
-                serverOutput = new PrintStream(server.getOutputStream());
+                serverInput = new BufferedReader (new InputStreamReader(ClasseModel.socket.getInputStream()));
+                serverOutput = new PrintStream(ClasseModel.socket.getOutputStream());
                 String messaggioServer;
                 
                 do{

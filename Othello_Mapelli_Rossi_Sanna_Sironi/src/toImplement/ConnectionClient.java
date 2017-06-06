@@ -25,6 +25,7 @@ public class ConnectionClient {
                 Socket s = new Socket(ip,port);
                 System.out.println("socket creata");
                 new Client(s,ip,port,g);
+               
             }
             catch(Exception ex){ System.out.println("ECCEZIONE socket inizio connessione \n " + ex); }
         }
