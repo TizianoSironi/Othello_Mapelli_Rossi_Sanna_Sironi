@@ -4,8 +4,10 @@
  * and open the template in the editor.
  */
 package toImplement;
+
 import model.ClasseModel;
 import java.io.IOException;
+import javax.swing.JButton;
 import model.Server;
 
 /**
@@ -13,12 +15,79 @@ import model.Server;
  * @author sironi.tiziano
  */
 public class Game extends javax.swing.JFrame {
-    public static JButton bottoni [][];
+
+    public static JButton bottoni[][];
     boolean premuto;
     int cordX;
     int cordY;
+
     public Game() {
-        initComponents();       
+        initComponents();
+        bottoni = new JButton[8][8];
+        bottoni[0][0] = jButton1;
+        bottoni[0][1] = jButton2;
+        bottoni[0][2] = jButton3;
+        bottoni[0][3] = jButton4;
+        bottoni[0][4] = jButton5;
+        bottoni[0][5] = jButton6;
+        bottoni[0][6] = jButton7;
+        bottoni[0][7] = jButton8;
+        bottoni[1][0] = jButton9;
+        bottoni[1][1] = jButton10;
+        bottoni[1][2] = jButton11;
+        bottoni[1][3] = jButton12;
+        bottoni[1][4] = jButton13;
+        bottoni[1][5] = jButton14;
+        bottoni[1][6] = jButton15;
+        bottoni[1][7] = jButton16;
+        bottoni[2][0] = jButton17;
+        bottoni[2][1] = jButton18;
+        bottoni[2][2] = jButton19;
+        bottoni[2][3] = jButton20;
+        bottoni[2][4] = jButton21;
+        bottoni[2][5] = jButton22;
+        bottoni[2][6] = jButton23;
+        bottoni[2][7] = jButton24;
+        bottoni[3][0] = jButton25;
+        bottoni[3][1] = jButton26;
+        bottoni[3][2] = jButton27;
+        bottoni[3][3] = jButton28;
+        bottoni[3][4] = jButton29;
+        bottoni[3][5] = jButton30;
+        bottoni[3][6] = jButton31;
+        bottoni[3][7] = jButton32;
+        bottoni[4][0] = jButton33;
+        bottoni[4][1] = jButton34;
+        bottoni[4][2] = jButton35;
+        bottoni[4][3] = jButton36;
+        bottoni[4][4] = jButton37;
+        bottoni[4][5] = jButton38;
+        bottoni[4][6] = jButton39;
+        bottoni[4][7] = jButton40;
+        bottoni[5][0] = jButton41;
+        bottoni[5][1] = jButton42;
+        bottoni[5][2] = jButton43;
+        bottoni[5][3] = jButton44;
+        bottoni[5][4] = jButton45;
+        bottoni[5][5] = jButton46;
+        bottoni[5][6] = jButton47;
+        bottoni[5][7] = jButton48;
+        bottoni[6][0] = jButton49;
+        bottoni[6][1] = jButton50;
+        bottoni[6][2] = jButton51;
+        bottoni[6][3] = jButton52;
+        bottoni[6][4] = jButton53;
+        bottoni[6][5] = jButton54;
+        bottoni[6][6] = jButton55;
+        bottoni[6][7] = jButton56;
+        bottoni[7][0] = jButton57;
+        bottoni[7][1] = jButton58;
+        bottoni[7][2] = jButton59;
+        bottoni[7][3] = jButton60;
+        bottoni[7][4] = jButton61;
+        bottoni[7][5] = jButton62;
+        bottoni[7][6] = jButton63;
+        bottoni[7][7] = jButton64;
     }
 
     @SuppressWarnings("unchecked")
@@ -104,7 +173,6 @@ public class Game extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton67 = new javax.swing.JButton();
-        jButton68 = new javax.swing.JButton();
 
         jButton65.setText("jButton65");
 
@@ -991,13 +1059,6 @@ public class Game extends javax.swing.JFrame {
             }
         });
 
-        jButton68.setText("Start Server");
-        jButton68.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton68ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -1013,10 +1074,8 @@ public class Game extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton67)
-                    .addComponent(jButton68))
-                .addContainerGap())
+                .addComponent(jButton67)
+                .addGap(14, 14, 14))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1026,12 +1085,10 @@ public class Game extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jButton67))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton68))
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1049,110 +1106,105 @@ public class Game extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    
+
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         int x = 5;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int x = 0;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         int x = 2;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         int x = 0;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int x = 0;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         int x = 0;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         int x = 0;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         int x = 0;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         int x = 0;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         int x = 0;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
-        if(ClasseModel.gameStarted == false){
+        if (ClasseModel.gameStarted == false) {
             System.out.println("versione client");
             new ConnectionClient(this);
+        } else {
+            System.out.println("Partita gia iniziata");
         }
-        else{ System.out.println("Partita gia iniziata"); }
     }//GEN-LAST:event_jButton67ActionPerformed
-
-    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
-        System.out.println("versione server");
-        new Server();
-    }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         int x = 1;
@@ -1242,7 +1294,7 @@ public class Game extends javax.swing.JFrame {
         int x = 2;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        
+
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
@@ -1479,13 +1531,14 @@ public class Game extends javax.swing.JFrame {
         System.out.println("pos<" + x + "><" + y + ">");
     }//GEN-LAST:event_jButton64ActionPerformed
 
-    public String getButtonPushed(){
-        while (!premuto){
-            
+    public String getButtonPushed() {
+        while (!premuto) {
+
         }
-        premuto=false;
-        return String.valueOf(cordX)+","+String.valueOf(cordY);
+        premuto = false;
+        return String.valueOf(cordX) + "," + String.valueOf(cordY);
     }
+
     public static void main(String args[]) throws IOException {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -1560,7 +1613,6 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JButton jButton65;
     private javax.swing.JButton jButton66;
     private javax.swing.JButton jButton67;
-    private javax.swing.JButton jButton68;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
