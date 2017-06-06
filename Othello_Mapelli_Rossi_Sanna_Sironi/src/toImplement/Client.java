@@ -20,13 +20,14 @@ public class Client {
      private Scacchiera campo;
      int cordX;
      int cordY;
+     Game g;
     /**
      * costruttore per stampare le informazioni della connessione e salvare quest'ultime nella classe del model.
      * @param s Socket della connessione stabilita
      * @param ip Stringa della porta della connessione
      * @param port Int della porta della connessione
      */
-    public Client(Socket s,String ip, int port){
+    public Client(Socket s,String ip, int port, Game g){
         ClasseModel.gameStarted = true;
         ClasseModel.socket = s;
         ClasseModel.ip = ip;
@@ -34,6 +35,8 @@ public class Client {
         System.out.println("INFORMAZIONI SULLA CONNESSIONE \nIP Address: " + ip + "\nPort Number: " + port + "\nSocket " + s);
      
     }
+
+    
     /**
      * metodo per iniziare il gioco
      */
@@ -59,7 +62,7 @@ public class Client {
                         do{
                             
                             System.out.println("Inserisci le coordinate della prossima mossa");
-                            //Leggere il bottone che mi è arrivato
+                            String buttonPushed  Game.getButtonPushed();
                             serverOutput.println("place: <"+cordX+">, <"+cordY+">;");
                             messaggioServer=serverInput.readLine();
                             
@@ -79,6 +82,7 @@ public class Client {
                            System.out.println(cordX);
                            System.out.println(cordY);
                            System.out.println (messaggioServer.substring(9,10));
+                           String col = messaggioServer.substring(9,20);
                            campo.posizionaNuovaCasella (cordX, cordY, col);
                            aggiornaVisualizzazioneBottoni();
                            System.out.println(messaggioServer.startsWith("update: ")+" non è il mio turno");

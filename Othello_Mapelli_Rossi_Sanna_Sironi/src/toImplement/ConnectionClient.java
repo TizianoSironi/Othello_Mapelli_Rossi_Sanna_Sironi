@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author sironi.tiziano
  */
 public class ConnectionClient {
-    public ConnectionClient(){
+    public ConnectionClient(Game g){
         System.out.println("|--------------------------|");
         System.out.println("| CONNESSIONE MULTIPLAYER  |");
         System.out.println("|--------------------------|");
@@ -23,7 +23,7 @@ public class ConnectionClient {
                 System.out.println("creazione socket");
                 Socket s = new Socket(ip,port);
                 System.out.println("socket creata");
-                new Client(s,ip,port);
+                new Client(s,ip,port,g);
             }
             catch(Exception ex){ System.out.println("ECCEZIONE socket inizio connessione \n " + ex); }
         }

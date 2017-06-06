@@ -15,7 +15,9 @@ import model.Server;
  */
 public class Game extends javax.swing.JFrame {
     public static JButton bottoni [][];
-    
+    boolean premuto;
+    int cordX;
+    int cordY;
     public Game() {
         initComponents();
         bottoni = new JButton [8][8];
@@ -920,74 +922,102 @@ public class Game extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    public void cambiaColoreW(){
-        
-    }
+    
     
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         int x = 6;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int x = 0;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         int x = 3;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         int x = 0;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int x = 0;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         int x = 0;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         int x = 0;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         int x = 0;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         int x = 0;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         int x = 0;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
+        cordX=x;
+        cordY=y;
+        premuto=true;
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
         if(ClasseModel.gameStarted == false){
             System.out.println("versione client");
-            new ConnectionClient();
+            new ConnectionClient(this);
         }
         else{ System.out.println("Partita gia iniziata"); }
     }//GEN-LAST:event_jButton67ActionPerformed
@@ -1086,8 +1116,16 @@ public class Game extends javax.swing.JFrame {
         int x = 2;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
+        
     }//GEN-LAST:event_jButton24ActionPerformed
 
+    public String getButtonPushed(){
+        while (!premuto){
+            
+        }
+        premuto=false;
+        return String.valueOf(cordX)+","+String.valueOf(cordY);
+    }
     public static void main(String args[]) throws IOException {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
