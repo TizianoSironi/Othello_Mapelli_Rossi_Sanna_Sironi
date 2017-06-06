@@ -1,26 +1,30 @@
 package model;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.*;
 import java.net.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Client {
-
-    public static void main(String[] args) throws UnknownHostException, IOException {
+    public static Socket server;
+    public static void main(String[] args) {
         String indIP = "";
         int Numero;
         String idClient ="";
+        
+        
         System.out.println("Client startato. Attendo al connessione di un altro giocatore.");
         Scanner sc = new Scanner(System.in);
        
             System.out.println("Inserisci l'indririzzo IP del server: ");
             indIP = sc.next();
-            Socket server = new Socket(indIP, 9999);
+            try{
+               server = new Socket(indIP, 9999); 
+            }
+            catch(NullPointerException ex1){ System.out.println("CLIENT : eccezione NullPointerException"); }
+            catch(Exception ex){ System.out.println(ex); }
+            
             BufferedReader serverInput; 
             PrintStream serverOutput;
             try {
@@ -49,7 +53,7 @@ public class Client {
                             messaggioServer=serverInput.readLine();
                             System.out.println(messaggioServer.startsWith("update: ")+" è il mio turno");
                         }while (!messaggioServer.startsWith("update: "));
-                            //Bisongna estrarre le coordinate da update e stampare la mappa
+                            //Bisogna estrarre le coordinate da update e stampare la mappa
                     } else{
                         do{
                            System.out.println("Non è il mio turno.. aspetto");

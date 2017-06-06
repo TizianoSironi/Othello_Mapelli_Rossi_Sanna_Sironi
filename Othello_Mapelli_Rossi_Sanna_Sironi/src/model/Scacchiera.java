@@ -163,12 +163,18 @@ public class Scacchiera {
     
     
     public void calcolaMosseValide(String turno){
+        for (int r=0;r<8;r++){
+            for (int c=0;c<8;c++){
+                mosseValide[r][c]=false;
+            }
+        }
+        
         for (int r=0; r<8; r++){
             for (int c=0; c<8; c++){
                 for (int i=0; i<8; i++){
-                    if (controllaValiditàMossa(r,c,turno,i)){
+                   if (controllaValiditàMossa(r,c,turno,i)){
                         mosseValide[r][c]=true;
-                    }
+                   }
                 }
             }
         }
