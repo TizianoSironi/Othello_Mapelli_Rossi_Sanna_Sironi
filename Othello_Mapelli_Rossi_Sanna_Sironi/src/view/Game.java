@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package view;
+
+import java.awt.Toolkit;
 import model.ClasseModel;
 import java.io.IOException;
 import javax.swing.JButton;
@@ -15,12 +17,15 @@ import model.ConnectionClient;
  * @author sironi.tiziano
  */
 public class Game extends javax.swing.JFrame {
-    public static JButton bottoni [][];
+
+    public static JButton bottoni[][];
     boolean premuto;
     int cordX;
     int cordY;
+
     public Game() {
-        initComponents();       
+        setIcon();  //richiama il metodo per aggiungere l'icona al frame
+        initComponents();
     }
 
     @SuppressWarnings("unchecked")
@@ -126,7 +131,7 @@ public class Game extends javax.swing.JFrame {
 
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/images/empty.png"))); // NOI18N
-        jButton1.setToolTipText("<1>, <1>");
+        jButton1.setToolTipText("");
         jButton1.setAlignmentY(0.0F);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -1048,606 +1053,609 @@ public class Game extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    
+
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         int x = 5;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int x = 0;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         int x = 2;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         int x = 0;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         int x = 0;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         int x = 0;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         int x = 0;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         int x = 0;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         int x = 0;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         int x = 0;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
-        if(ClasseModel.gameStarted == false){
+        if (ClasseModel.gameStarted == false) {
             System.out.println("versione client");
             new ConnectionClient(this);
+        } else {
+            System.out.println("Partita gia iniziata");
         }
-        else{ System.out.println("Partita gia iniziata"); }
     }//GEN-LAST:event_jButton67ActionPerformed
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
         System.out.println("versione server");
-        new Server();
+        new ServerGUI();
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         int x = 1;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         int x = 1;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         int x = 1;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         int x = 1;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         int x = 1;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
         int x = 1;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         int x = 1;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         int x = 1;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         int x = 2;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         int x = 2;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         int x = 2;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         int x = 2;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         int x = 2;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         int x = 2;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         int x = 2;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
         int x = 3;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton25ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         int x = 3;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         int x = 3;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
         int x = 3;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         int x = 3;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         int x = 3;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton30ActionPerformed
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         int x = 3;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton31ActionPerformed
 
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         int x = 3;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton32ActionPerformed
 
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         int x = 4;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton33ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         int x = 4;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton34ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         int x = 4;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton35ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         int x = 4;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton36ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         int x = 4;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         int x = 4;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         int x = 4;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         int x = 4;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         int x = 5;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         int x = 5;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         int x = 5;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
         int x = 5;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
         int x = 5;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
         int x = 5;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton47ActionPerformed
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
         int x = 5;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton48ActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         int x = 6;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
         int x = 6;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton50ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
         int x = 6;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
         int x = 6;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
         int x = 6;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
         int x = 6;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         int x = 6;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
         int x = 6;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
         int x = 7;
         int y = 0;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
         int x = 7;
         int y = 1;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton58ActionPerformed
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         int x = 7;
         int y = 2;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton59ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
         int x = 7;
         int y = 3;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton60ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
         int x = 7;
         int y = 4;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
         int x = 7;
         int y = 5;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton62ActionPerformed
 
     private void jButton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton63ActionPerformed
         int x = 7;
         int y = 6;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton63ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
         int x = 7;
         int y = 7;
         System.out.println("pos<" + x + "><" + y + ">");
-        cordX=x;
-        cordY=y;
-        premuto=true;
+        cordX = x;
+        cordY = y;
+        premuto = true;
     }//GEN-LAST:event_jButton64ActionPerformed
 
-    public String getButtonPushed(){
-        while (!premuto){
-            
+    public String getButtonPushed() {
+        while (!premuto) {
+
         }
-        premuto=false;
-        return String.valueOf(cordX)+","+String.valueOf(cordY);
+        premuto = false;
+        return String.valueOf(cordX) + "," + String.valueOf(cordY);
     }
+
     public static void main(String args[]) throws IOException {
         java.awt.EventQueue.invokeLater(new Runnable() {
+            ServerGUI server = new ServerGUI();
+
             public void run() {
                 String posizione;
                 new Game().setVisible(true);
@@ -1737,5 +1745,12 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * metodo per aggiungere l'icona al frame
+     */
+    private void setIcon() {    //metodo per impostare l'icona dell'applicazione Calcolatrice
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("othello.png")));
+    }
 
 }
