@@ -22,6 +22,7 @@ public class Game extends javax.swing.JFrame {
     boolean premuto;
     int cordX;
     int cordY;
+    ServerGUI s;
 
     public Game() {
         setIcon();  //richiama il metodo per aggiungere l'icona al frame
@@ -1155,7 +1156,7 @@ public class Game extends javax.swing.JFrame {
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
         System.out.println("versione server");
-        new ServerGUI();
+        s = new ServerGUI();
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed

@@ -5,6 +5,10 @@
  */
 package view;
 
+import java.net.ServerSocket;
+import java.net.Socket;
+import model.OthelloServer;
+
 /**
  *
  * @author Joker
@@ -14,7 +18,11 @@ public class ServerGUI extends javax.swing.JFrame {
     /**
      * Creates new form Server
      */
+    
+    ServerGUI s;
+    
     public ServerGUI() {
+        s = new ServerGUI();
         initComponents();
     }
 
@@ -78,21 +86,36 @@ public class ServerGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonServerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonServerActionPerformed
-        ServerGUI s = new ServerGUI();
-    }//GEN-LAST:event_jButtonServerActionPerformed
+        try {
+            ServerSocket ss = new ServerSocket(9999);
+            int partita = 0;
+            System.out.println("OthelloServer started.");
+            System.out.println("In ascolto sulla porta 9999");
+            while (true) {
+                System.out.println("Pronto per una partita...");
+                Socket c1 = ss.accept();
+                System.out.println("Client 1 si è connesso. In attesa di client 2.");
+                Socket c2 = ss.accept();
+                System.out.println("Client 2 si è connesso. Ora creo una nuova partita.");
+
+                new OthelloServer(c1, c2, String.valueOf(partita)).start();
+                partita++;
+            }
+        } catch (Exception ex) {
+            System.out.println("ECCEZZIONE metodo run " + ex);
+        }    }//GEN-LAST:event_jButtonServerActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    
     /*
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+    //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+    /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-    /*
+     */
+ /*
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -112,7 +135,7 @@ public class ServerGUI extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-    /*
+ /*
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new ServerGUI().setVisible(true);
@@ -120,6 +143,31 @@ public class ServerGUI extends javax.swing.JFrame {
         });
     }*/
 
+    public void start(){
+        /*try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(ServerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(ServerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(ServerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(ServerGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new ServerGUI().setVisible(true);
+            }
+        });*/
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonServer;
     private javax.swing.JPanel jPanel1;
