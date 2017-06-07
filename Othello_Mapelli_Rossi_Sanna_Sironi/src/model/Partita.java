@@ -28,7 +28,7 @@ public class Partita {
                     temp=false;
                 }*/
                 if(campo.mosseValide[r][c]){
-                    System.out.println(r + ", " + c +" : " + campo.mosseValide[r][c] );
+                    //System.out.println(r + ", " + c +" : " + campo.mosseValide[r][c] );
                     temp=false;
                 }
             }
