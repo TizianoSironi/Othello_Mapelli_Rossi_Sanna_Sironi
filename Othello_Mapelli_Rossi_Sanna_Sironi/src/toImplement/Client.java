@@ -35,6 +35,7 @@ public class Client {
         ClasseModel.port = port;
         System.out.println("INFORMAZIONI SULLA CONNESSIONE \nIP Address: " + ip + "\nPort Number: " + port + "\nSocket " + s);
         Game = g;
+        campo = new Scacchiera();
         startGame();
     }
 
@@ -64,7 +65,7 @@ public class Client {
                         do{
                             
                             System.out.println("Inserisci le coordinate della prossima mossa");
-                            //String buttonPushed;  Game.getButtonPushed();
+                            String buttonPushed=  Game.getButtonPushed();
                             serverOutput.println("place: <"+cordX+">, <"+cordY+">;");
                             messaggioServer=serverInput.readLine();
                             

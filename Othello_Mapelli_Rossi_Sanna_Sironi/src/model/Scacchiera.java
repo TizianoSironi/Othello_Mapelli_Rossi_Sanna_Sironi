@@ -150,7 +150,7 @@ public class Scacchiera {
                 if (mosseValide[x][y] && direzioniValide[i]){
                     controllaValiditàMossaCambiaColore(x,y,col,i);
                     oneDirValid=true;
-                    System.out.println("Ho cambiato i colori delle pedine");
+                    //System.out.println("Ho cambiato i colori delle pedine");
                 }
             }
             if (oneDirValid){
@@ -466,7 +466,7 @@ public class Scacchiera {
                 System.out.println("Va bene, mossa valida " );
                 return true;
             } else if (mappa[x][y].casellaVuota()){
-                System.out.println("Hai vicino una casella vuota, non puoi mettere la pedina");
+                System.out.println("Non puoi mettere la pedina");
                 return false;
             } else {
                 if (newX > 7||newY > 7||newX < 0||newY < 0){

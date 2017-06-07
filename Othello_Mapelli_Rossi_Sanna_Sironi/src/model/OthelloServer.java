@@ -67,7 +67,7 @@ public class OthelloServer extends Thread {
                         System.out.println("client1Output: update: <N>, <" + cordX + ">, <" + cordY + ">;");
                         client2Output.println("update: <N>, <" + cordX + ">, <" + cordY + ">;");
                         System.out.println("client2Output: update: <N>, <" + cordX + ">, <" + cordY + ">;");
-                        partita.campo.getCasella(cordX, cordY).cambiaColore("N");
+                        partita.campo.getCasella(cordX+1, cordY+1).cambiaColore("N");
                     } else {
                         client1Output.println("move not valid;");
                         System.out.println("client1Output: move not valid;");
@@ -90,7 +90,7 @@ public class OthelloServer extends Thread {
                         System.out.println("client1Output: update: <B>, <" + cordX + ">, <" + cordY + ">;");
                         client2Output.println("update: <B>, <" + cordX + ">, <" + cordY + ">;");
                         System.out.println("client2Output: update: <B>, <" + cordX + ">, <" + cordY + ">;");
-                        partita.campo.getCasella(cordX, cordY).cambiaColore("B");
+                        partita.campo.getCasella(cordX+1, cordY+1).cambiaColore("B");
                     } else {
                         client2Output.println("move not valid;");
                         System.out.println("client2Output: move not valid;");

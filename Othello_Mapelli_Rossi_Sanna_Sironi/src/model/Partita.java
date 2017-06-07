@@ -34,7 +34,7 @@ public class Partita {
             }
         }
         partitaAperta = !temp;
-        System.out.println(!temp ? "partita aperta" : " partita chiusa" );
+        //System.out.println(!temp ? "partita aperta" : " partita chiusa" );
         return partitaAperta;
     }
     
