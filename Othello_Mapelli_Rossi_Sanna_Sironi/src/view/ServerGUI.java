@@ -18,11 +18,8 @@ public class ServerGUI extends javax.swing.JFrame {
     /**
      * Creates new form Server
      */
-    
-    ServerGUI s;
-    
+        
     public ServerGUI() {
-        s = new ServerGUI();
         initComponents();
     }
 
