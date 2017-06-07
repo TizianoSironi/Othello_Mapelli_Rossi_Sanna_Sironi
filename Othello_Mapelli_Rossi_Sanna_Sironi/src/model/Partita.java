@@ -28,13 +28,13 @@ public class Partita {
                     temp=false;
                 }*/
                 if(campo.mosseValide[r][c]){
-                    System.out.println(r + ", " + c +" : " + campo.mosseValide[r][c] );
+                    //System.out.println(r + ", " + c +" : " + campo.mosseValide[r][c] );
                     temp=false;
                 }
             }
         }
         partitaAperta = !temp;
-        System.out.println(!temp ? "partita aperta" : " partita chiusa" );
+        //System.out.println(!temp ? "partita aperta" : " partita chiusa" );
         return partitaAperta;
     }
     
